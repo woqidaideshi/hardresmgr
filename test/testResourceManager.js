@@ -1,9 +1,9 @@
-var resourceMgr = require('../../../app/demo-rio/APIs/resourceMgr');
+var resourceMgr = require('api').resourceMgr();
 var args = {};
 var type = [];
 type.push('hardResource');
-//type.push('input');
-//type.push('mouse');
+type.push('input');
+type.push('mouse');
 args['type'] = type;
 args['desc']={};
 //args['desc']['IP']='127.0.0.1';
@@ -43,6 +43,8 @@ resMgr.getResourceList(function(err, ret_) {
   typeItem['option'] = 0;
   detail.push(typeItem);
   agrsObj['detail'] = detail;
+  agrsObj['desc']={};
+  //agrsObj['desc']['IP']='127.0.0.1';
   resMgr.applyResource(function(err, ret_) {
     console.log("APPLY====================> " + err + "   " + JSON.stringify(ret_));
     resMgr.getResourceList(function(err, ret_) {
@@ -50,7 +52,7 @@ resMgr.getResourceList(function(err, ret_) {
       resMgr.releaseResource(function(err, ret_) {
         console.log("RELEASE====================> " + err + "   " + JSON.stringify(ret_));
         resMgr.getResourceList(function(err, ret_) {
-          console.log("APPLY-------------->>>>>>>> " + JSON.stringify(ret_));
+          console.log("getReso-------------->>>>>>>> " + JSON.stringify(ret_));
         }, args);
       }, agrsObj);
     }, args);

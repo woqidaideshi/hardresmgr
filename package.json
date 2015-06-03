@@ -1,13 +1,18 @@
 {
   "author": "fangyafen",
-  "name": "hardResMgr",
+  "name": "hardresmgr",
   "description": "for local resource hard resource manager",
   "version": "0.1.0",
   "repository": {
     "url": ""
   },
   "main": "implements/hardResMgr.js",
-  "dependencies": {},
+  "dependencies": {
+    "systemconfig": "~0.1.0",
+    "webde-rpc": "~0.1.0",
+    "utils": "~0.1.0",
+    "api": "~0.1.0"
+    },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {

@@ -4,9 +4,9 @@
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
 var initObj = {
-  "address": "nodejs.webde.hardResMgr",
-  "path": "/nodejs/webde/hardResMgr",
-  "name": "nodejs.webde.hardResMgr",
+  "address": "nodejs.webde.hardresmgr",
+  "path": "/nodejs/webde/hardresmgr",
+  "name": "nodejs.webde.hardresmgr",
   "type": "dbus",
   "service": false
 }

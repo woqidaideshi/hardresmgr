@@ -28,7 +28,7 @@ Proxy.prototype.getResourceList = function(Object, callback) {
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
       action: 0,
-      svr: 'nodejs.webde.hardResMgr',
+      svr: 'nodejs.webde.hardresmgr',
       func: 'getResourceList',
       args: args
     };
@@ -48,7 +48,7 @@ Proxy.prototype.applyResource = function(Object, callback) {
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
       action: 0,
-      svr: 'nodejs.webde.hardResMgr',
+      svr: 'nodejs.webde.hardresmgr',
       func: 'applyResource',
       args: args
     };
@@ -68,7 +68,7 @@ Proxy.prototype.releaseResource = function(Object, callback) {
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
       action: 0,
-      svr: 'nodejs.webde.hardResMgr',
+      svr: 'nodejs.webde.hardresmgr',
       func: 'releaseResource',
       args: args
     };
@@ -92,7 +92,7 @@ Proxy.prototype.on = function(event, handler) {
   this._cd.on(event, handler);
   var argvs = {
     'action': 0,
-    'svr': 'nodejs.webde.hardResMgr',
+    'svr': 'nodejs.webde.hardresmgr',
     'func': 'on',
     'args': [event]
   };
@@ -116,7 +116,7 @@ Proxy.prototype.off = function(event, handler) {
   this._cd.off(event, handler);
   var argvs = {
     'action': 0,
-    'svr': 'nodejs.webde.hardResMgr',
+    'svr': 'nodejs.webde.hardresmgr',
     'func': 'off',
     'args': [event]
   };

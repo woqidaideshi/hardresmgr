@@ -4,9 +4,9 @@
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
 var initObj = {
-  "address": "nodejs.webde.hardResMgr",
-  "path": "/nodejs/webde/hardResMgr",
-  "name": "nodejs.webde.hardResMgr",
+  "address": "nodejs.webde.hardresmgr",
+  "path": "/nodejs/webde/hardresmgr",
+  "name": "nodejs.webde.hardresmgr",
   "type": "dbus",
   "service": true,
   "interface": [
@@ -83,7 +83,7 @@ Stub.prototype._notifyStateChg = function(items_, state_) {
 var stub = null,
     cd = null,
     hardResMgr=null;
-var proxyPath = __dirname+'/hardResMgrProxy';
+var proxyPath = __dirname+'/hardresmgrProxy';
 exports.getStub = function(hardResMgr_) {
   if(stub == null) {
  //   if(typeof proxyAddr_ === 'undefined')

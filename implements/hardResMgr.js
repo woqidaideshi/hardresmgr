@@ -2,9 +2,9 @@ var fs = require('fs'),
   path = require("path"),
   http = require('http'),
   cp = require('child_process'),
-  config = require('../../../config'),
-  flowctl = require('../../../sdk/utils/flowctl'),
-  json4line = require('../../../sdk/utils/json4line');
+  utils = require('utils'),
+  flowctl = utils.Flowctl(),
+  json4line = utils.Json4line();
 var configPath = __dirname + '/config.json';
 
 function ResourceManager(ret_) {
@@ -364,7 +364,7 @@ var stub = null;
 (function main() {
   var hardResMgr = new ResourceManager({
     success: function() {
-      stub = require('../interface/hardResMgrStub').getStub(hardResMgr);
+      stub = require('../interface/hardresmgrStub').getStub(hardResMgr);
       console.log('hard resource manager start OK');
     },
     fail: function(error) {
