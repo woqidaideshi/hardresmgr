@@ -70,6 +70,13 @@
       "desc": "disk info of the device",
       "detail":{},
       "state":0
+    },
+    "printer":{
+      "type": "printer",
+      "name": "printer info",
+      "desc": "printer of the device",
+      "detail":{},
+      "state":0
     }
   },
   "desc": "input( mouse, keyboard, camera ), output( VGA, audio, video, Ethernet, Network );disk(diskinfo)"

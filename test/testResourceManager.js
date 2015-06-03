@@ -1,4 +1,4 @@
-var resourceMgr = require('../../APIs/resourceMgr');
+var resourceMgr = require('../../../app/demo-rio/APIs/resourceMgr');
 var args = {};
 var type = [];
 type.push('hardResource');
