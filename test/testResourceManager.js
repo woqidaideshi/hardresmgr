@@ -5,20 +5,22 @@ type.push('hardResource');
 type.push('input');
 type.push('mouse');
 args['type'] = type;
-args['desc']={};
-//args['desc']['IP']='127.0.0.1';
+args['desc'] = {};
+args['desc']['IP'] = '127.0.0.1';
 var resMgr = null;
 resMgr = resourceMgr.getResMgr();
 resMgr.on('hardResource', function(rst_) {
   console.log('chag====>' + JSON.stringify(rst_));
+  console.log('TIME--->' + new Date().getTime());
 });
 resMgr.getResourceList(function(err, ret_) {
   console.log("-------------->>>>>>>> " + JSON.stringify(ret_));
-  /*resMgr.applyVideoChat(function(err, ret_) {
+  resMgr.applyVideoChat(function(err, ret_) {
     console.log("APLLY VI====================> " + err + "   " + JSON.stringify(ret_));
-  },args);*/
+    console.log('TIME--->' + new Date().getTime());
+  }, args);
   var agrsObj = {};
-  agrsObj['desc']={};
+  agrsObj['desc'] = {};
   agrsObj['type'] = ['hardResource'];
   var detail = [];
   var typeItem = {};
@@ -43,16 +45,18 @@ resMgr.getResourceList(function(err, ret_) {
   typeItem['option'] = 0;
   detail.push(typeItem);
   agrsObj['detail'] = detail;
-  agrsObj['desc']={};
-  //agrsObj['desc']['IP']='127.0.0.1';
+  agrsObj['desc'] = {};
+  agrsObj['other'] = 0;
+  agrsObj['desc']['IP'] = '127.0.0.1';
   resMgr.applyResource(function(err, ret_) {
-    console.log("APPLY====================> " + err + "   " + JSON.stringify(ret_));
+    console.log("APPLY0====================> " + err + "   " + JSON.stringify(ret_));
+    console.log('APPLY0 TIME--->' + new Date().getTime());
     resMgr.getResourceList(function(err, ret_) {
       console.log("GET-------------->>>>>>>> " + JSON.stringify(ret_));
       resMgr.releaseResource(function(err, ret_) {
         console.log("RELEASE====================> " + err + "   " + JSON.stringify(ret_));
         resMgr.getResourceList(function(err, ret_) {
-          console.log("getReso-------------->>>>>>>> " + JSON.stringify(ret_));
+          console.log("GET-------------->>>>>>>> " + JSON.stringify(ret_));
         }, args);
       }, agrsObj);
     }, args);
