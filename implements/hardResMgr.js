@@ -118,7 +118,6 @@ ResourceManager.prototype.applyResource = function(argObj_, callback_) {
       if (abort || rstObj === undefined) {
         callback_('apply abort');
       } else {
-        //setTimeout(function(){
         flowctl.parallel1(rstObj['detail'], funcApply, function(err_, rets_) {
           if (detailRst === undefined) {
             callback_('apply  failed');
@@ -126,7 +125,7 @@ ResourceManager.prototype.applyResource = function(argObj_, callback_) {
             rstObj['detail'] = detailRst;
             callback_(null, rstObj);
           }
-        });//},1000);
+        });
       }
     });
   } catch (e) {
