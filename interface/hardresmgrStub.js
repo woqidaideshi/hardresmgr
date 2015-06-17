@@ -115,6 +115,7 @@ Stub.prototype._handleReleaseQueue = function() {
       stub._handleReleaseQueue();
   });
 };
+
 var utils = require('utils'),
   flowctl = utils.Flowctl();
 var stub = null,
