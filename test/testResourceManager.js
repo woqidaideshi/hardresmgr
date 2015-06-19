@@ -45,8 +45,8 @@ resMgr.getResourceList(function(err, ret_) {
   agrsObj['other'] = 0;
   agrsObj['desc']['IP'] = '127.0.0.1';
   resMgr.applyResource(function(err, ret_) {
-    console.log("APPLY0====================> " + err + "   " + JSON.stringify(ret_));
-    console.log('APPLY0 TIME--->' + new Date().getTime());
+    console.log("APPLY====================> " + err + "   " + JSON.stringify(ret_));
+    console.log('APPLY TIME--->' + new Date().getTime());
     resMgr.getResourceList(function(err, ret_) {
       console.log("GET-------------->>>>>>>> " + JSON.stringify(ret_));
       resMgr.releaseResource(function(err, ret_) {
