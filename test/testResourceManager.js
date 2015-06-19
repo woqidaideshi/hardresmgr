@@ -15,10 +15,6 @@ resMgr.on('hardResource', function(rst_) {
 });
 resMgr.getResourceList(function(err, ret_) {
   console.log("-------------->>>>>>>> " + JSON.stringify(ret_));
-  resMgr.applyVideoChat(function(err, ret_) {
-    console.log("APLLY VI====================> " + err + "   " + JSON.stringify(ret_));
-    console.log('TIME--->' + new Date().getTime());
-  }, args);
   var agrsObj = {};
   agrsObj['desc'] = {};
   agrsObj['type'] = ['hardResource'];
