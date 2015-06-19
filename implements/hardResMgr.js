@@ -154,11 +154,6 @@ ResourceManager.prototype.releaseResource = function(argObj_, callback_) {
           console.log('releaseResource error when get resource ' + err_);
           funcCb();
         } else {
-          //if (rst_.state === 0) {
-          //   funcRst(args, function() {
-          //     funcCb();
-          //  });
-          //  } else {
           if (rst_.state === 1) {
             self._setResourceState(rst_, 0, function(err_, rst_) {
               if (err_) {
@@ -170,7 +165,7 @@ ResourceManager.prototype.releaseResource = function(argObj_, callback_) {
                 });
               }
             });
-          }
+          }else funcCb();
         }
       });
     }
