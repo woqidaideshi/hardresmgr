@@ -69,6 +69,7 @@ ResourceManager.prototype.getResourceList = function(argObj_, callback_) {
   }
 }
 
+// TODO: add a channel property into rstObj for getting data
 ResourceManager.prototype.applyResource = function(argObj_, callback_) {
   var self = this;
   var rst = undefined;

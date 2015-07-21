@@ -57,6 +57,10 @@ Proxy.prototype.getResourceList = function(Object, callback) {
   });
 };
 
+function getChannel(type, auth, callback) {
+  proxy._ipc.invoke();
+}
+
 /**
  * @description
  *    some brief introduction of this interface
@@ -65,6 +69,7 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
+// TODO: modify to set up a data channel
 Proxy.prototype.applyResource = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
