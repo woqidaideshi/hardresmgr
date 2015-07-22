@@ -13,6 +13,10 @@
     {
       "name": "releaseResource",
       "in": ["Object"]
+    },
+    {
+      "name": "getChannel",
+      "in": ["String", "String"]
     }
   ]
 }

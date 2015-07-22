@@ -27,10 +27,17 @@ var initObj = {
       "in": [
         "Object"
       ]
+    },
+    {
+      "name": "getChannel",
+      "in": [
+        "String",
+        "String"
+      ]
     }
   ],
   "serviceObj": {
-    getResourceList: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({
           err: err
@@ -40,15 +47,18 @@ var initObj = {
         });
       });
     },
-    applyResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    applyResource: function(Object, callback) {
       applyQueue.push([Object,callback]);
       if(applyQueue.length===1)
         stub._handleApplyQueue();
     },
-    releaseResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    releaseResource: function(Object, callback) {
       releaseQueue.push([Object,callback]);
       if(releaseQueue.length===1)
         stub._handleReleaseQueue();
+    },
+    getChannel: function(type, auth, callback) {
+      // TODO: check type, the postfix '_remote' means a remote call
     }
   }
 }

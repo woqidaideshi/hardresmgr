@@ -69,7 +69,7 @@ function getChannel(type, auth, callback) {
  * @return
  *    what will return from this interface
  */
-// TODO: modify to set up a data channel
+// TODO: modify to return an authentication for setting up data channels
 Proxy.prototype.applyResource = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
@@ -99,6 +99,46 @@ Proxy.prototype.releaseResource = function(Object, callback) {
     callback: callback
   });
 };
+
+var net = require('net');
+/**
+ * @description
+ *    Set up a data channel based on data type and authentication
+ * @param
+ *    param1: data type -> String
+/**
+ * @description
+ *    Set up a data channel based on data type and authentication
+ * @param
+ *    param1: data type -> String
+ *    param2: authentication recived -> String
+ *    param3: callback function -> Function
+ *    @description
+ *      return the result of this RPC call
+ *    @param
+ *      param1: err description or null
+ *      param2: data channel object
+ * @return
+ *    err or data channel object
+ */
+Proxy.prototype.getChannel = function(String, String, callback) {
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
+      cb = function(ret) {
+        if(ret.err) return callback(ret.err);
+        var servPath = ret.ret;
+        channel.newChannel(servPath, function(err, dChannel) {
+          if(err) return callback(err);
+          callback(null, dChannel);
+        });
+      };
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'getChannel',
+    in: args,
+    callback: cb
+  });
+}
 
 /**
  * @description
