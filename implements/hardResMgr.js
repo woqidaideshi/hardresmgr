@@ -4,7 +4,8 @@ var fs = require('fs'),
   cp = require('child_process'),
   utils = require('utils'),
   flowctl = utils.Flowctl(),
-  json4line = utils.Json4line();
+  json4line = utils.Json4line(),
+  channel = require('./channel');
 var configPath = __dirname + '/config.json';
 
 function ResourceManager(ret_) {
@@ -17,6 +18,9 @@ function ResourceManager(ret_) {
   this._cpiCmd=null ;
   this._inputDeviceCmd=null;
   this._cmdExtended =null;
+
+  // TODO: use flow control to make sure these two
+  channel.localServStart();
   this._initResource(function(err) {
     if (err) return ret.fail(err);
     return ret.success();

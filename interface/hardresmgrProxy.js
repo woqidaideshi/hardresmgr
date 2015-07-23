@@ -121,15 +121,24 @@ var net = require('net');
  * @return
  *    err or data channel object
  */
-Proxy.prototype.getChannel = function(String, String, callback) {
+Proxy.prototype.getChannel = function(type, auth, callback) {
+  // TODO: change type to an Object {type:, target:, remote:}
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
         if(ret.err) return callback(ret.err);
         var servPath = ret.ret;
-        channel.newChannel(servPath, function(err, dChannel) {
-          if(err) return callback(err);
-          callback(null, dChannel);
+        var channel = net.connect({path: servPath}, function() {
+          channel.send('0:' + type);
+        });
+        channel.once('data', function(chuck) {
+          var msg = (chuck + '').split(':');
+          if(msg[0] == '0') {
+            if(msg[1] == 'OK')
+              return callback(null, channel);
+            else
+              return callback('bind channel failed!!');
+          }
         });
       };
   this._ipc.invoke({
@@ -139,6 +148,8 @@ Proxy.prototype.getChannel = function(String, String, callback) {
     callback: cb
   });
 }
+
+// TODO: add an interface called connChannel(auth, sessionID) for conn self-defined process
 
 /**
  * @description

@@ -3,6 +3,7 @@
 // TODO: please replace types with peramters' name you wanted of any functions
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
+var channel = require('../implements/channel');
 var initObj = {
   "address": "nodejs.webde.hardresmgr",
   "path": "/nodejs/webde/hardresmgr",
@@ -58,7 +59,10 @@ var initObj = {
         stub._handleReleaseQueue();
     },
     getChannel: function(type, auth, callback) {
-      // TODO: check type, the postfix '_remote' means a remote call
+      channel.getChannel(type, auth, function(err) {
+        if(err) return callback({err: err});
+        callback({ret: arguments[1]});
+      });
     }
   }
 }
