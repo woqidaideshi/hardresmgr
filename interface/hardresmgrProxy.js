@@ -105,12 +105,11 @@ var net = require('net');
  * @description
  *    Set up a data channel based on data type and authentication
  * @param
- *    param1: data type -> String
-/**
- * @description
- *    Set up a data channel based on data type and authentication
- * @param
- *    param1: data type -> String
+ *    param1: {
+ *      type: device type,
+ *      cmd: process to capture devices, default is undefined
+ *      arg: arguments for cmd, only when cmd is not undefined
+ *    } -> Object
  *    param2: authentication recived -> String
  *    param3: callback function -> Function
  *    @description
@@ -121,26 +120,32 @@ var net = require('net');
  * @return
  *    err or data channel object
  */
-Proxy.prototype.getChannel = function(type, auth, callback) {
-  // TODO: change type to an Object {type:, target:, remote:}
+Proxy.prototype.getChannel = function(srcObj, auth, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
         if(ret.err) return callback(ret.err);
         var servPath = ret.ret;
         var channel = net.connect({path: servPath}, function() {
-          channel.send('0:' + type);
+          channel.write('0:' + srcObj.type);
         });
         channel.once('data', function(chuck) {
           var msg = (chuck + '').split(':');
+          console.log('message recived:', msg);
           if(msg[0] == '0') {
-            if(msg[1] == 'OK')
+            if(msg[1] == 'OK') {
+              channel.id = msg[2];
+              channel.write(channel.id);
               return callback(null, channel);
-            else
-              return callback('bind channel failed!!');
+            } else {
+              return callback('Bind channel failed!! ' + msg[1]);
+            }
           }
+        }).once('error', function(err) {
+          callback(err);
         });
       };
+  args[0]. remote = false;
   this._ipc.invoke({
     token: this._token++,
     name: 'getChannel',

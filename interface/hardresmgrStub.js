@@ -32,7 +32,7 @@ var initObj = {
     {
       "name": "getChannel",
       "in": [
-        "String",
+        "Object",
         "String"
       ]
     }
@@ -58,8 +58,8 @@ var initObj = {
       if(releaseQueue.length===1)
         stub._handleReleaseQueue();
     },
-    getChannel: function(type, auth, callback) {
-      channel.getChannel(type, auth, function(err) {
+    getChannel: function(srcObj, auth, callback) {
+      channel.getChannel(srcObj, auth, function(err) {
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
       });
@@ -134,10 +134,10 @@ var utils = require('utils'),
   flowctl = utils.Flowctl();
 var stub = null,
     cd = null,
-    hardResMgr=null;
-var applyQueue=[],
-    releaseQueue=[];
-var proxyPath = __dirname+'/hardresmgrProxy';
+    hardResMgr = null;
+var applyQueue = [],
+    releaseQueue = [];
+var proxyPath = __dirname + '/hardresmgrProxy';
 exports.getStub = function(hardResMgr_) {
   if(stub == null) {
  //   if(typeof proxyAddr_ === 'undefined')
@@ -151,7 +151,7 @@ exports.getStub = function(hardResMgr_) {
       }
     });
     stub = new Stub();
-    hardResMgr=hardResMgr_;
+    hardResMgr = hardResMgr_;
   }
   return stub;
 }
