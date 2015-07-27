@@ -145,7 +145,7 @@ Proxy.prototype.getChannel = function(srcObj, auth, callback) {
           callback(err);
         });
       };
-  args[0]. remote = false;
+  args[0].remote = false;
   this._ipc.invoke({
     token: this._token++,
     name: 'getChannel',

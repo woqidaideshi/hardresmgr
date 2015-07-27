@@ -50,11 +50,13 @@ function bindChannel(srcObj, channel, callback) {
   // channelEstablish(srcObj, function(err, devChannel) {
     // devChannel.pipe(channel);
   // });
+  
   // Just for test
   var fs = require('fs');
   var rs1 = fs.createReadStream('/home/lgy/ttt');
   peddingChannel[channel.id] = [rs1, channel];
   // test end
+  
   return cb(null);
 }
 
@@ -85,10 +87,13 @@ exports.localServStart = function(callback) {
         var msg = (chuck + '').split(':');
         console.log('message recived:', msg);
         if(msg[0] == '0') {
+          // bind request from data consumer
           bindChannel(msg[1], channel, function(err) {
             if(err) return channel.write('0:Error-' + err);
             channel.write('0:OK:' + channel.id);
           });
+        } else if(msg[0] == '1') {
+          // bind request from data producter
         } else {
           if(msg[0] == channel.id) {
             channel.removeListener('data', protoMgr);

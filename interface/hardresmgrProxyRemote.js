@@ -107,7 +107,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
           callback(null, dChannel);
         });
       };
-  args[0]. remote = true;
+  args[0].remote = true;
   var argv = {
         action: 0,
         svr: 'nodejs.webde.hardresmgr',
