@@ -57,6 +57,10 @@ Proxy.prototype.getResourceList = function(Object, callback) {
   });
 };
 
+function getChannel(type, auth, callback) {
+  proxy._ipc.invoke();
+}
+
 /**
  * @description
  *    some brief introduction of this interface
@@ -65,6 +69,7 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
+// TODO: modify to return an authentication for setting up data channels
 Proxy.prototype.applyResource = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
@@ -94,6 +99,62 @@ Proxy.prototype.releaseResource = function(Object, callback) {
     callback: callback
   });
 };
+
+var net = require('net');
+/**
+ * @description
+ *    Set up a data channel based on data type and authentication
+ * @param
+ *    param1: {
+ *      type: device type,
+ *      cmd: process to capture devices, default is undefined
+ *      arg: arguments for cmd, only when cmd is not undefined
+ *    } -> Object
+ *    param2: authentication recived -> String
+ *    param3: callback function -> Function
+ *    @description
+ *      return the result of this RPC call
+ *    @param
+ *      param1: err description or null
+ *      param2: data channel object
+ * @return
+ *    err or data channel object
+ */
+Proxy.prototype.getChannel = function(srcObj, auth, callback) {
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
+      cb = function(ret) {
+        if(ret.err) return callback(ret.err);
+        var servPath = ret.ret;
+        var channel = net.connect({path: servPath}, function() {
+          channel.write('0:' + srcObj.type);
+        });
+        channel.once('data', function(chuck) {
+          var msg = (chuck + '').split(':');
+          console.log('message recived:', msg);
+          if(msg[0] == '0') {
+            if(msg[1] == 'OK') {
+              channel.id = msg[2];
+              channel.write(channel.id);
+              return callback(null, channel);
+            } else {
+              return callback('Bind channel failed!! ' + msg[1]);
+            }
+          }
+        }).once('error', function(err) {
+          callback(err);
+        });
+      };
+  args[0]. remote = false;
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'getChannel',
+    in: args,
+    callback: cb
+  });
+}
+
+// TODO: add an interface called connChannel(auth, sessionID) for conn self-defined process
 
 /**
  * @description

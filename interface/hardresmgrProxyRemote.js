@@ -11,7 +11,8 @@ function Proxy(ip) {
   }
 
   // TODO: replace $cdProxy to the real path
-  this._cd = require('../../commdaemon/interface/commdaemonProxy.js').getProxy();  this._token = 0;
+  this._cd = require('../../commdaemon/interface/commdaemonProxy.js').getProxy();
+  this._token = 0;
 
 }
 
@@ -74,6 +75,47 @@ Proxy.prototype.releaseResource = function(Object, callback) {
     };
   this._cd.send(this.ip, argv, callback);
 };
+
+var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy();
+/**
+ * @description
+ *    Set up a data channel based on data type and authentication
+ * @param
+ *    param1: {
+ *      type: device type,
+ *      cmd: process to capture devices, default is undefined
+ *      arg: arguments for cmd, only when cmd is not undefined
+ *    } -> Object
+ *    param2: authentication recived -> String
+ *    param3: callback function -> Function
+ *    @description
+ *      return the result of this RPC call
+ *    @param
+ *      param1: err description or null
+ *      param2: data channel object
+ * @return
+ *    err or data channel object
+ */
+Proxy.prototype.getChannel = function(Object, String, callback) {
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
+      cb = function(ret) {
+        if(ret.err) return callback(ret.err);
+        var sessionID = ret.ret;
+        dt.getChannel(sessionID, function(err, dChannel) {
+          if(err) return callback(err);
+          callback(null, dChannel);
+        });
+      };
+  args[0]. remote = true;
+  var argv = {
+        action: 0,
+        svr: 'nodejs.webde.hardresmgr',
+        func: 'getChannel',
+        args: args
+      };
+  this._cd.send(this.ip, argv, cb);
+}
 
 /**
  * @description

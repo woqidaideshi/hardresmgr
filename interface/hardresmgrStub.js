@@ -3,6 +3,7 @@
 // TODO: please replace types with peramters' name you wanted of any functions
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
+var channel = require('../implements/channel');
 var initObj = {
   "address": "nodejs.webde.hardresmgr",
   "path": "/nodejs/webde/hardresmgr",
@@ -27,10 +28,17 @@ var initObj = {
       "in": [
         "Object"
       ]
+    },
+    {
+      "name": "getChannel",
+      "in": [
+        "Object",
+        "String"
+      ]
     }
   ],
   "serviceObj": {
-    getResourceList: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({
           err: err
@@ -40,15 +48,21 @@ var initObj = {
         });
       });
     },
-    applyResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    applyResource: function(Object, callback) {
       applyQueue.push([Object,callback]);
       if(applyQueue.length===1)
         stub._handleApplyQueue();
     },
-    releaseResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+    releaseResource: function(Object, callback) {
       releaseQueue.push([Object,callback]);
       if(releaseQueue.length===1)
         stub._handleReleaseQueue();
+    },
+    getChannel: function(srcObj, auth, callback) {
+      channel.getChannel(srcObj, auth, function(err) {
+        if(err) return callback({err: err});
+        callback({ret: arguments[1]});
+      });
     }
   }
 }
@@ -120,10 +134,10 @@ var utils = require('utils'),
   flowctl = utils.Flowctl();
 var stub = null,
     cd = null,
-    hardResMgr=null;
-var applyQueue=[],
-    releaseQueue=[];
-var proxyPath = __dirname+'/hardresmgrProxy';
+    hardResMgr = null;
+var applyQueue = [],
+    releaseQueue = [];
+var proxyPath = __dirname + '/hardresmgrProxy';
 exports.getStub = function(hardResMgr_) {
   if(stub == null) {
  //   if(typeof proxyAddr_ === 'undefined')
@@ -137,7 +151,7 @@ exports.getStub = function(hardResMgr_) {
       }
     });
     stub = new Stub();
-    hardResMgr=hardResMgr_;
+    hardResMgr = hardResMgr_;
   }
   return stub;
 }
