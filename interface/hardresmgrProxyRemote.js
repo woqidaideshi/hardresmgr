@@ -110,6 +110,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
           if(err) return callback(err);
           callback(null, dChannel);
+          dChannel.write(dChannel.id);
         });
       };
   args[0].srcAddr = localIP;
