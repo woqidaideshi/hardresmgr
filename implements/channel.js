@@ -121,6 +121,11 @@ exports.getChannel = function(srcObj, auth, callback) {
       bindChannel(srcObj, channel, function(err) {
         if(err) return callback(err);
         callback(null, channel.id);
+        channel.once('data', function(chuck) {
+          var msg = chuck + '';
+          if(channel.id == msg)
+            activePeddingChannel(channel.id);
+        });
       });
     });
   } else {
