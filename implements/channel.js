@@ -8,6 +8,7 @@ var net = require('net'),
     localServName = shasum.update(new Date() + 'servPath').digest('hex'),
     localServPath = os.tmpdir() + '/' + localServName + '.sock',
     localServ = null,
+    dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
@@ -113,9 +114,15 @@ exports.localServStart = function(callback) {
 exports.getChannel = function(srcObj, auth, callback) {
   // TODO: check the authentication
   var cb = callback || noop;
-  if(srcObj.remote) {
+  if(srcObj.srcAddr) {
     // call from remote
-    bindChannel(srcObj);
+    dt.getChannel({addr: srcObj.srcAddr}, function(err, channel) {
+      if(err) return callback(err);
+      bindChannel(srcObj, channel, function(err) {
+        if(err) return callback(err);
+        callback(null, channel.id);
+      });
+    });
   } else {
     cb(null, localServPath);
   }

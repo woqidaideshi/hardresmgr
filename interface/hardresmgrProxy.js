@@ -124,6 +124,8 @@ Proxy.prototype.getChannel = function(srcObj, auth, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
+        console.log('local getChannel back!!', ret);
+        if(srcObj.srcAddr) return callback(ret);
         if(ret.err) return callback(ret.err);
         var servPath = ret.ret;
         var channel = net.connect({path: servPath}, function() {
@@ -145,13 +147,13 @@ Proxy.prototype.getChannel = function(srcObj, auth, callback) {
           callback(err);
         });
       };
-  args[0].remote = false;
   this._ipc.invoke({
     token: this._token++,
     name: 'getChannel',
     in: args,
     callback: cb
   });
+  console.log('local proxy:', args);
 }
 
 // TODO: add an interface called connChannel(auth, sessionID) for conn self-defined process

@@ -76,7 +76,11 @@ Proxy.prototype.releaseResource = function(Object, callback) {
   this._cd.send(this.ip, argv, callback);
 };
 
-var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy();
+var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
+    os = require('os'),
+    netIface = os.networkInterfaces(),
+    eth = netIface.eth0 || netIface.eth1,
+    localIP = eth[0].address;
 /**
  * @description
  *    Set up a data channel based on data type and authentication
@@ -100,14 +104,15 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
+        console.log('remote getChannel back!!', ret);
         if(ret.err) return callback(ret.err);
         var sessionID = ret.ret;
-        dt.getChannel(sessionID, function(err, dChannel) {
+        dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
           if(err) return callback(err);
           callback(null, dChannel);
         });
       };
-  args[0].remote = true;
+  args[0].srcAddr = localIP;
   var argv = {
         action: 0,
         svr: 'nodejs.webde.hardresmgr',
@@ -115,6 +120,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         args: args
       };
   this._cd.send(this.ip, argv, cb);
+  console.log('remote proxy:', args);
 }
 
 /**
