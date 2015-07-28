@@ -16,7 +16,7 @@
     },
     {
       "name": "getChannel",
-      "in": ["String", "String"]
+      "in": ["Object", "String"]
     }
   ]
 }
