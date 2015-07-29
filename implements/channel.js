@@ -8,6 +8,7 @@ var net = require('net'),
     localServName = shasum.update(new Date() + 'servPath').digest('hex'),
     localServPath = os.tmpdir() + '/' + localServName + '.sock',
     localServ = null,
+    dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
@@ -50,11 +51,13 @@ function bindChannel(srcObj, channel, callback) {
   // channelEstablish(srcObj, function(err, devChannel) {
     // devChannel.pipe(channel);
   // });
+  
   // Just for test
   var fs = require('fs');
   var rs1 = fs.createReadStream('/home/lgy/ttt');
   peddingChannel[channel.id] = [rs1, channel];
   // test end
+  
   return cb(null);
 }
 
@@ -85,10 +88,13 @@ exports.localServStart = function(callback) {
         var msg = (chuck + '').split(':');
         console.log('message recived:', msg);
         if(msg[0] == '0') {
+          // bind request from data consumer
           bindChannel(msg[1], channel, function(err) {
             if(err) return channel.write('0:Error-' + err);
             channel.write('0:OK:' + channel.id);
           });
+        } else if(msg[0] == '1') {
+          // bind request from data producter
         } else {
           if(msg[0] == channel.id) {
             channel.removeListener('data', protoMgr);
@@ -108,9 +114,20 @@ exports.localServStart = function(callback) {
 exports.getChannel = function(srcObj, auth, callback) {
   // TODO: check the authentication
   var cb = callback || noop;
-  if(srcObj.remote) {
+  if(srcObj.srcAddr) {
     // call from remote
-    bindChannel(srcObj);
+    dt.getChannel({addr: srcObj.srcAddr}, function(err, channel) {
+      if(err) return callback(err);
+      bindChannel(srcObj, channel, function(err) {
+        if(err) return callback(err);
+        callback(null, channel.id);
+        channel.once('data', function(chuck) {
+          var msg = chuck + '';
+          if(channel.id == msg)
+            activePeddingChannel(channel.id);
+        });
+      });
+    });
   } else {
     cb(null, localServPath);
   }

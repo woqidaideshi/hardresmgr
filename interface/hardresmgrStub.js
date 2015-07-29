@@ -40,12 +40,8 @@ var initObj = {
   "serviceObj": {
     getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
-        if (err) return callback({
-          err: err
-        });
-        callback({
-          ret: result
-        });
+        if (err) return callback({err: err});
+        callback({ret: result});
       });
     },
     applyResource: function(Object, callback) {
