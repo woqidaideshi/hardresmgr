@@ -3,17 +3,39 @@
 // TODO: please replace types with peramters' name you wanted of any functions
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
-function Proxy(ip) {
-  if(typeof ip !== 'undefined') {
-    this.ip = ip;
-  } else {
-    return console.log('The remote IP is required');
-  }
+var initObj = {
+  "address": "nodejs.webde.hardresmgr",
+  "path": "/nodejs/webde/hardresmgr",
+  "name": "nodejs.webde.hardresmgr",
+  "type": "dbus",
+  "service": false
+}
 
-  // TODO: replace $cdProxy to the real path
-  this._cd = require('../../commdaemon/interface/commdaemonProxy.js').getProxy();
+function Proxy() {
+  // TODO: please replace $IPC with the real path of webde-rpc module in your project
+  this._ipc = require('webde-rpc').getIPC(initObj);
   this._token = 0;
 
+  // TODO: choose to implement interfaces of ipc
+  /* handle message send from service
+  this._ipc.onMsg = function(msg) {
+    // TODO: your handler
+  }*/
+
+  /* handle the event emitted when connected succeffuly
+  this._ipc.onConnect = function() {
+    // TODO: your handler
+  }*/
+
+  /* handle the event emitted when connection has been closed
+  this._ipc.onClose = function() {
+    // TODO: your handler
+  }*/
+
+  /* handle the event emitted when error occured
+  this._ipc.onError = function(err) {
+    // TODO: your handler
+  }*/
 }
 
 /**
@@ -27,13 +49,12 @@ function Proxy(ip) {
 Proxy.prototype.getResourceList = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
-  var argv = {
-      action: 0,
-      svr: 'nodejs.webde.hardresmgr',
-      func: 'getResourceList',
-      args: args
-    };
-  this._cd.send(this.ip, argv, callback);
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'getResourceList',
+    in: args,
+    callback: callback
+  });
 };
 
 /**
@@ -44,16 +65,16 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
+// TODO: modify to return an authentication for setting up data channels
 Proxy.prototype.applyResource = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
-  var argv = {
-      action: 0,
-      svr: 'nodejs.webde.hardresmgr',
-      func: 'applyResource',
-      args: args
-    };
-  this._cd.send(this.ip, argv, callback);
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'applyResource',
+    in: args,
+    callback: callback
+  });
 };
 
 /**
@@ -67,20 +88,15 @@ Proxy.prototype.applyResource = function(Object, callback) {
 Proxy.prototype.releaseResource = function(Object, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
-  var argv = {
-      action: 0,
-      svr: 'nodejs.webde.hardresmgr',
-      func: 'releaseResource',
-      args: args
-    };
-  this._cd.send(this.ip, argv, callback);
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'releaseResource',
+    in: args,
+    callback: callback
+  });
 };
 
-var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
-    os = require('os'),
-    netIface = os.networkInterfaces(),
-    eth = netIface.eth0 || netIface.eth1,
-    localIP = eth[0].address;
+var net = require('net');
 /**
  * @description
  *    Set up a data channel based on data type and authentication
@@ -100,29 +116,43 @@ var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy()
  * @return
  *    err or data channel object
  */
-Proxy.prototype.getChannel = function(Object, String, callback) {
+Proxy.prototype.getChannel = function(srcObj, auth, callback) {
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
-        console.log('remote getChannel back!!', ret);
+        console.log('local getChannel back!!', ret);
+        if(srcObj.srcAddr) return callback(ret);
         if(ret.err) return callback(ret.err);
-        var sessionID = ret.ret;
-        dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
-          if(err) return callback(err);
-          callback(null, dChannel);
-          dChannel.write(dChannel.id);
+        var servPath = ret.ret;
+        var channel = net.connect({path: servPath}, function() {
+          channel.write('0:' + srcObj.type);
+        });
+        channel.once('data', function(chuck) {
+          var msg = (chuck + '').split(':');
+          console.log('message recived:', msg);
+          if(msg[0] == '0') {
+            if(msg[1] == 'OK') {
+              channel.id = msg[2];
+              channel.write(channel.id);
+              return callback(null, channel);
+            } else {
+              return callback('Bind channel failed!! ' + msg[1]);
+            }
+          }
+        }).once('error', function(err) {
+          callback(err);
         });
       };
-  args[0].srcAddr = localIP;
-  var argv = {
-        action: 0,
-        svr: 'nodejs.webde.hardresmgr',
-        func: 'getChannel',
-        args: args
-      };
-  this._cd.send(this.ip, argv, cb);
-  console.log('remote proxy:', args);
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'getChannel',
+    in: args,
+    callback: cb
+  });
+  console.log('local proxy:', args);
 }
+
+// TODO: add an interface called connChannel(auth, sessionID) for conn self-defined process
 
 /**
  * @description
@@ -138,14 +168,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
  *    itself of this instance
  */
 Proxy.prototype.on = function(event, handler) {
-  this._cd.on(event, handler);
-  var argvs = {
-    'action': 0,
-    'svr': 'nodejs.webde.hardresmgr',
-    'func': 'on',
-    'args': [event]
-  };
-  this._cd.send(this.ip, argvs);
+  this._ipc.on(event, handler);
 };
 
 /**
@@ -162,20 +185,13 @@ Proxy.prototype.on = function(event, handler) {
  *    itself of this instance
  */
 Proxy.prototype.off = function(event, handler) {
-  this._cd.off(event, handler);
-  var argvs = {
-    'action': 0,
-    'svr': 'nodejs.webde.hardresmgr',
-    'func': 'off',
-    'args': [event]
-  };
-  this._cd.send(this.ip, argvs);
+  this._ipc.removeListener(event, handler);
 };
 
 var proxy = null;
-exports.getProxy = function(ip) {
+exports.getProxy = function() {
   if(proxy == null) {
-    proxy = new Proxy(ip);
+    proxy = new Proxy();
   }
   return proxy;
 };

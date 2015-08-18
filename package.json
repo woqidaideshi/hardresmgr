@@ -6,7 +6,7 @@
   "repository": {
     "url": ""
   },
-  "main": "implements/hardResMgr.js",
+  "main": "index.js",
   "dependencies": {
     "systemconfig": "~0.1.0",
     "webde-rpc": "~0.1.0",
