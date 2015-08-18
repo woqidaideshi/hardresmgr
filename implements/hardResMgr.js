@@ -364,7 +364,7 @@ var stub = null;
 (function main() {
   var hardResMgr = new ResourceManager({
     success: function() {
-      stub = require('../interface/hardresmgrStub').getStub(hardResMgr);
+      stub = require('../interface/stub').getStub(hardResMgr);
       console.log('hard resource manager start OK');
     },
     fail: function(error) {

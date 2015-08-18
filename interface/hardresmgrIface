@@ -1,6 +1,6 @@
 {
   "remote": "true",
-  "service": "hardResMgr",
+  "service": "hardresmgr",
   "interfaces": [
     {
       "name": "getResourceList",
