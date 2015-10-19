@@ -1,0 +1,986 @@
+Data channel is listening on /tmp/ccb2fee00fd80e419bac62519971793d3ef19b85.sock
+<class 'Xlib.protocol.request.QueryExtension'>
+<class 'Xlib.protocol.request.QueryExtension'>
+
+hard resource manager start OK
+channel2MouseKey
+channel2MouseKey
+peddingChannel not found
+{type:mouse,xPos: 708,yPos: 502,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 661,yPos: 546,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 594,yPos: 581,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 523,yPos: 614,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 452,yPos: 645,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 381,yPos: 672,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 312,yPos: 697,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 249,yPos: 716,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 194,yPos: 733,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 143,yPos: 746,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 96,yPos: 759,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 49,yPos: 770,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 6,yPos: 781,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 794,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 805,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 810,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 812,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 812,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 807,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 0,yPos: 805,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1,yPos: 803,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 7,yPos: 790,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 18,yPos: 767,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 33,yPos: 738,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 46,yPos: 711,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 57,yPos: 686,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 64,yPos: 663,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 69,yPos: 646,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 69,yPos: 629,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 614,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 601,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 588,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 575,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 562,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 73,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 75,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 75,yPos: 511,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 75,yPos: 494,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 73,yPos: 477,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 73,yPos: 460,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 71,yPos: 445,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 69,yPos: 432,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 64,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 62,yPos: 412,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 62,yPos: 410,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 62,yPos: 408,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 62,yPos: 407,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 64,yPos: 405,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 70,yPos: 405,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 89,yPos: 405,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 112,yPos: 408,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 137,yPos: 415,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 168,yPos: 422,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 199,yPos: 429,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 232,yPos: 438,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 265,yPos: 447,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 300,yPos: 456,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 335,yPos: 461,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 366,yPos: 468,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 389,yPos: 470,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 412,yPos: 473,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 431,yPos: 476,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 446,yPos: 478,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 457,yPos: 483,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 459,yPos: 485,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 460,yPos: 486,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 461,yPos: 487,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 461,yPos: 488,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 461,yPos: 489,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 460,yPos: 490,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 457,yPos: 493,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 456,yPos: 494,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 455,yPos: 495,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 453,yPos: 495,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 452,yPos: 496,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 451,yPos: 498,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 449,yPos: 501,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 448,yPos: 503,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 448,yPos: 505,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 448,yPos: 507,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 448,yPos: 508,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 448,yPos: 508,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 448,yPos: 508,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 448,yPos: 506,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 448,yPos: 494,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 445,yPos: 477,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 443,yPos: 456,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 440,yPos: 433,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 438,yPos: 408,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 435,yPos: 383,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 432,yPos: 354,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 325,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 298,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 275,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 252,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 229,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 430,yPos: 210,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 432,yPos: 191,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 435,yPos: 172,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 440,yPos: 157,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 445,yPos: 146,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 452,yPos: 135,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 459,yPos: 124,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 466,yPos: 115,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 473,yPos: 108,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 480,yPos: 101,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 482,yPos: 99,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 484,yPos: 97,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 485,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 486,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 490,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 493,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 502,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 511,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 524,yPos: 99,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 538,yPos: 102,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 553,yPos: 104,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 567,yPos: 106,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 580,yPos: 108,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 589,yPos: 108,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 590,yPos: 108,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 591,yPos: 108,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 593,yPos: 109,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 596,yPos: 113,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 598,yPos: 115,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 602,yPos: 118,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 608,yPos: 123,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 610,yPos: 125,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 611,yPos: 129,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 612,yPos: 130,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 614,yPos: 132,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 615,yPos: 133,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 617,yPos: 135,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 618,yPos: 137,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 619,yPos: 138,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 620,yPos: 141,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 620,yPos: 142,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 622,yPos: 144,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 623,yPos: 146,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 623,yPos: 146,Obj:1,Action:press,MessageName:mouse left down}
+{type:mouse,xPos: 623,yPos: 146,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 626,yPos: 152,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 632,yPos: 164,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 644,yPos: 187,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 663,yPos: 220,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 682,yPos: 267,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 699,yPos: 312,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 714,yPos: 353,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 729,yPos: 394,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 742,yPos: 439,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 755,yPos: 484,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 770,yPos: 529,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 781,yPos: 574,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 792,yPos: 613,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 803,yPos: 650,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 814,yPos: 677,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 825,yPos: 710,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 836,yPos: 735,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 847,yPos: 760,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 854,yPos: 785,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 861,yPos: 810,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 868,yPos: 835,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 875,yPos: 858,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 882,yPos: 881,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 887,yPos: 902,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 889,yPos: 923,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 894,yPos: 944,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 894,yPos: 965,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 897,yPos: 980,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 897,yPos: 995,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 902,yPos: 1008,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 904,yPos: 1017,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 906,yPos: 1024,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 906,yPos: 1028,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 906,yPos: 1029,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 907,yPos: 1030,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 1031,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 908,yPos: 1034,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 1038,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 1041,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 1044,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 1048,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 910,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 910,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 913,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 913,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 914,yPos: 1049,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 914,yPos: 1049,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 914,yPos: 1049,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 914,yPos: 1040,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 913,yPos: 1024,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 1006,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 983,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 956,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 917,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 911,yPos: 864,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 914,yPos: 823,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 917,yPos: 796,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 926,yPos: 769,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 933,yPos: 752,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 938,yPos: 735,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 943,yPos: 714,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 945,yPos: 695,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 947,yPos: 678,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 950,yPos: 663,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 950,yPos: 652,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 952,yPos: 641,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 954,yPos: 632,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 956,yPos: 623,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 959,yPos: 615,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 961,yPos: 606,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 963,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 965,yPos: 586,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 968,yPos: 577,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 970,yPos: 575,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 970,yPos: 572,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 971,yPos: 571,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 971,yPos: 570,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 971,yPos: 567,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 972,yPos: 566,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 972,yPos: 564,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 974,yPos: 560,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 974,yPos: 557,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 975,yPos: 555,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 976,yPos: 550,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 976,yPos: 549,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 976,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 976,yPos: 540,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 978,yPos: 538,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 979,yPos: 536,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 981,yPos: 533,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 981,yPos: 532,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 982,yPos: 531,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 984,yPos: 530,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 985,yPos: 530,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 988,yPos: 530,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 990,yPos: 529,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 994,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 995,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 997,yPos: 526,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 998,yPos: 525,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 999,yPos: 524,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1000,yPos: 523,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1001,yPos: 521,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1002,yPos: 520,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1003,yPos: 519,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1004,yPos: 518,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1005,yPos: 518,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1007,yPos: 516,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1010,yPos: 515,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1012,yPos: 514,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1016,yPos: 513,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1019,yPos: 513,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1022,yPos: 511,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1023,yPos: 511,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1023,yPos: 511,Obj:3,Action:press,MessageName:mouse right down}
+
+{type:mouse,xPos: 1023,yPos: 511,Obj:3,Action:release,MessageName:mouse right up}
+
+{type:mouse,xPos: 1024,yPos: 511,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1027,yPos: 513,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1029,yPos: 516,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1029,yPos: 518,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1031,yPos: 523,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1032,yPos: 527,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1032,yPos: 529,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1032,yPos: 531,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1033,yPos: 533,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1033,yPos: 534,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1034,yPos: 535,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1035,yPos: 536,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1036,yPos: 539,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1036,yPos: 541,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1038,yPos: 544,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1040,yPos: 547,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1042,yPos: 550,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1044,yPos: 552,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1045,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1046,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1047,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1051,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1061,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1082,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1105,yPos: 556,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1132,yPos: 558,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1157,yPos: 558,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1184,yPos: 560,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1215,yPos: 560,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1236,yPos: 562,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1253,yPos: 567,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1266,yPos: 569,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1273,yPos: 571,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1273,yPos: 571,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 1273,yPos: 571,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 1271,yPos: 570,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1269,yPos: 569,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1267,yPos: 566,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1264,yPos: 562,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1260,yPos: 556,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1256,yPos: 551,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1252,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1250,yPos: 539,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1248,yPos: 532,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1246,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1246,yPos: 522,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 515,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 507,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 498,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 485,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 471,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 455,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 438,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1244,yPos: 406,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1251,yPos: 391,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1258,yPos: 376,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1265,yPos: 361,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1272,yPos: 348,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1279,yPos: 337,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1286,yPos: 328,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1293,yPos: 323,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1298,yPos: 316,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1303,yPos: 312,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1305,yPos: 310,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1306,yPos: 307,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1306,yPos: 306,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1302,yPos: 304,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1298,yPos: 302,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1294,yPos: 300,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1290,yPos: 298,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1289,yPos: 298,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1288,yPos: 299,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1286,yPos: 299,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1281,yPos: 299,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1280,yPos: 299,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1276,yPos: 299,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1272,yPos: 301,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1269,yPos: 302,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1265,yPos: 304,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1260,yPos: 308,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1252,yPos: 310,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1245,yPos: 312,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1237,yPos: 313,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1230,yPos: 315,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1226,yPos: 315,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1218,yPos: 317,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1211,yPos: 317,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1204,yPos: 317,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1196,yPos: 317,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1189,yPos: 315,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1181,yPos: 313,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1172,yPos: 312,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1162,yPos: 310,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1149,yPos: 306,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1135,yPos: 304,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1119,yPos: 297,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1102,yPos: 295,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1079,yPos: 292,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1062,yPos: 285,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1039,yPos: 278,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1016,yPos: 271,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 997,yPos: 269,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 978,yPos: 262,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 953,yPos: 255,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 930,yPos: 248,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 917,yPos: 239,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 908,yPos: 239,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 899,yPos: 236,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 880,yPos: 231,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 871,yPos: 226,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 864,yPos: 221,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 864,yPos: 219,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 864,yPos: 218,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 864,yPos: 217,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 864,yPos: 216,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 866,yPos: 212,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 876,yPos: 206,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 890,yPos: 201,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 905,yPos: 195,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 926,yPos: 186,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 951,yPos: 177,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 980,yPos: 168,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1017,yPos: 157,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1056,yPos: 146,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1099,yPos: 135,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1142,yPos: 124,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1185,yPos: 115,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1232,yPos: 106,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1281,yPos: 97,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1330,yPos: 90,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1381,yPos: 83,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1432,yPos: 76,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1481,yPos: 71,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1522,yPos: 64,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1561,yPos: 57,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1594,yPos: 52,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1621,yPos: 45,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1646,yPos: 38,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1669,yPos: 33,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 26,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 19,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 10,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 5,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 0,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1679,yPos: 0,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 1679,yPos: 0,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 1679,yPos: 3,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 5,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 8,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 11,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 14,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1679,yPos: 17,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1678,yPos: 20,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1676,yPos: 25,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1672,yPos: 33,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1667,yPos: 42,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1663,yPos: 58,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1654,yPos: 77,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1645,yPos: 96,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1636,yPos: 115,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1631,yPos: 132,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1626,yPos: 145,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1624,yPos: 158,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1622,yPos: 160,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1620,yPos: 162,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1619,yPos: 164,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1618,yPos: 165,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1614,yPos: 170,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1608,yPos: 181,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1595,yPos: 196,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1578,yPos: 215,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1557,yPos: 236,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1536,yPos: 259,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1515,yPos: 284,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1494,yPos: 309,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1473,yPos: 332,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1452,yPos: 353,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1425,yPos: 374,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1398,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1371,yPos: 414,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1344,yPos: 433,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1319,yPos: 446,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1294,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1267,yPos: 472,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1248,yPos: 479,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1225,yPos: 492,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1206,yPos: 505,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1185,yPos: 514,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1164,yPos: 521,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1143,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1122,yPos: 535,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1101,yPos: 540,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1080,yPos: 542,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1059,yPos: 542,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1042,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1027,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1018,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1013,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1009,yPos: 545,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1008,yPos: 546,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1007,yPos: 546,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1004,yPos: 546,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1002,yPos: 547,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1001,yPos: 547,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 998,yPos: 548,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 996,yPos: 548,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 994,yPos: 550,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 993,yPos: 550,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 992,yPos: 551,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 994,yPos: 551,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 997,yPos: 551,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 999,yPos: 552,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1004,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1010,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1015,yPos: 553,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1022,yPos: 555,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1029,yPos: 557,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1035,yPos: 559,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1039,yPos: 560,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1042,yPos: 560,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1043,yPos: 561,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1044,yPos: 562,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1045,yPos: 563,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1046,yPos: 566,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1047,yPos: 568,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1048,yPos: 569,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1050,yPos: 571,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1051,yPos: 572,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1052,yPos: 574,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1053,yPos: 575,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1053,yPos: 576,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1054,yPos: 577,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1055,yPos: 578,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1056,yPos: 579,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1057,yPos: 582,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1059,yPos: 584,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1061,yPos: 586,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1061,yPos: 588,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1063,yPos: 591,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1063,yPos: 592,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1063,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1063,yPos: 594,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1062,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1059,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1057,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1052,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1043,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1032,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1020,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1008,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 996,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 984,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 969,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 955,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 942,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 927,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 916,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 905,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 896,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 895,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 894,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 891,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 890,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 889,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 888,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 882,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 873,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 861,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 847,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 833,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 819,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 807,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 798,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 797,yPos: 595,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 797,yPos: 595,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 797,yPos: 595,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 802,yPos: 594,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 812,yPos: 594,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 827,yPos: 589,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 842,yPos: 589,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 857,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 872,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 885,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 898,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 905,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 911,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 913,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 914,yPos: 587,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 918,yPos: 586,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 924,yPos: 584,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 931,yPos: 584,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 939,yPos: 584,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 949,yPos: 584,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 960,yPos: 582,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 970,yPos: 582,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 982,yPos: 580,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 989,yPos: 578,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 993,yPos: 578,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 994,yPos: 578,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 996,yPos: 576,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 997,yPos: 577,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 997,yPos: 581,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1001,yPos: 589,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1001,yPos: 599,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1003,yPos: 609,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1003,yPos: 618,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1003,yPos: 626,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1005,yPos: 634,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1005,yPos: 642,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1005,yPos: 649,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1003,yPos: 655,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 993,yPos: 663,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 979,yPos: 667,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 960,yPos: 672,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 933,yPos: 672,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 902,yPos: 672,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 863,yPos: 672,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 816,yPos: 669,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 771,yPos: 662,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 724,yPos: 655,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 677,yPos: 650,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 632,yPos: 643,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 585,yPos: 630,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 544,yPos: 617,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 505,yPos: 606,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 470,yPos: 593,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 445,yPos: 580,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 424,yPos: 569,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 405,yPos: 556,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 398,yPos: 551,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 393,yPos: 547,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 393,yPos: 546,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 393,yPos: 546,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 393,yPos: 546,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 394,yPos: 542,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 413,yPos: 528,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 434,yPos: 507,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 459,yPos: 484,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 480,yPos: 465,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 497,yPos: 448,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 514,yPos: 435,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 527,yPos: 426,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 538,yPos: 424,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 545,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 546,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 549,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 552,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 553,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 556,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 558,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 561,yPos: 421,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 566,yPos: 420,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 573,yPos: 418,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 584,yPos: 412,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 602,yPos: 403,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 629,yPos: 388,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 660,yPos: 373,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 701,yPos: 354,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 736,yPos: 341,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 769,yPos: 326,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 798,yPos: 315,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 813,yPos: 304,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 834,yPos: 295,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 855,yPos: 290,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 880,yPos: 283,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 907,yPos: 276,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 934,yPos: 271,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 963,yPos: 266,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 994,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1023,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1048,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1071,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1094,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1117,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1140,yPos: 261,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1159,yPos: 263,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1178,yPos: 268,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1197,yPos: 275,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1210,yPos: 282,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1221,yPos: 284,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1228,yPos: 286,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1230,yPos: 286,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1231,yPos: 287,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1226,yPos: 290,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 1203,yPos: 298,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1168,yPos: 307,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1135,yPos: 320,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1102,yPos: 333,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1073,yPos: 346,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1044,yPos: 359,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1021,yPos: 372,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 1002,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 989,yPos: 386,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 980,yPos: 388,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 971,yPos: 390,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 966,yPos: 390,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 962,yPos: 392,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 954,yPos: 392,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 943,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 932,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 923,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 910,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 899,yPos: 395,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 890,yPos: 390,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 882,yPos: 385,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 880,yPos: 383,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 876,yPos: 382,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 875,yPos: 380,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 873,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 870,yPos: 376,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 867,yPos: 373,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 862,yPos: 369,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 858,yPos: 367,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 856,yPos: 365,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 853,yPos: 362,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 850,yPos: 360,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 846,yPos: 357,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 840,yPos: 354,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 835,yPos: 350,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 835,yPos: 350,Obj:4,Action:press,MessageName:mouse wheel up down}
+{type:mouse,xPos: 835,yPos: 350,Obj:4,Action:release,MessageName:mouse wheel up up}
+
+{type:mouse,xPos: 832,yPos: 350,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 826,yPos: 348,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 817,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 817,yPos: 347,Obj:4,Action:press,MessageName:mouse wheel up down}
+{type:mouse,xPos: 817,yPos: 347,Obj:4,Action:release,MessageName:mouse wheel up up}
+{type:mouse,xPos: 803,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 791,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 777,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 765,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 765,yPos: 347,Obj:4,Action:press,MessageName:mouse wheel up down}
+{type:mouse,xPos: 765,yPos: 347,Obj:4,Action:release,MessageName:mouse wheel up up}
+{type:mouse,xPos: 755,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 750,yPos: 347,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 746,yPos: 348,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 740,yPos: 351,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 736,yPos: 353,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 736,yPos: 353,Obj:4,Action:press,MessageName:mouse wheel up down}
+
+{type:mouse,xPos: 736,yPos: 353,Obj:4,Action:release,MessageName:mouse wheel up up}
+{type:mouse,xPos: 734,yPos: 356,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 731,yPos: 359,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 728,yPos: 360,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 727,yPos: 361,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 725,yPos: 363,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 724,yPos: 364,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 722,yPos: 366,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 720,yPos: 368,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 719,yPos: 368,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 718,yPos: 369,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 716,yPos: 370,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 715,yPos: 371,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 714,yPos: 372,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 713,yPos: 372,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 712,yPos: 373,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 710,yPos: 374,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 710,yPos: 375,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 707,yPos: 377,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 706,yPos: 378,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 703,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 702,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 698,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 693,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 684,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 675,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 660,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 641,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 622,yPos: 372,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 605,yPos: 353,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 578,yPos: 342,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 551,yPos: 331,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 522,yPos: 320,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 479,yPos: 309,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 452,yPos: 298,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 425,yPos: 287,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 398,yPos: 274,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 375,yPos: 265,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 356,yPos: 252,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 341,yPos: 239,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 328,yPos: 228,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 319,yPos: 217,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 312,yPos: 208,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 305,yPos: 201,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 301,yPos: 194,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 299,yPos: 189,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 299,yPos: 186,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 299,yPos: 183,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 298,yPos: 181,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 298,yPos: 179,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 298,yPos: 178,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 298,yPos: 176,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 298,yPos: 174,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 297,yPos: 173,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 297,yPos: 172,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 297,yPos: 170,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 297,yPos: 168,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 296,yPos: 166,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 294,yPos: 165,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 294,yPos: 164,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 292,yPos: 161,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 292,yPos: 159,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 289,yPos: 156,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 288,yPos: 155,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 286,yPos: 153,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 286,yPos: 153,Obj:1,Action:press,MessageName:mouse left down}
+
+{type:mouse,xPos: 286,yPos: 153,Obj:1,Action:release,MessageName:mouse left up}
+
+{type:mouse,xPos: 287,yPos: 154,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 298,yPos: 169,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 311,yPos: 186,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 324,yPos: 203,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 339,yPos: 220,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 350,yPos: 233,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 361,yPos: 252,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 372,yPos: 267,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 381,yPos: 284,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 390,yPos: 303,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 395,yPos: 320,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 400,yPos: 337,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 405,yPos: 358,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 412,yPos: 379,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 417,yPos: 400,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 424,yPos: 415,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 433,yPos: 430,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 438,yPos: 441,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 443,yPos: 452,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 445,yPos: 457,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 447,yPos: 458,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 450,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 456,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 468,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 483,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 500,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 521,yPos: 457,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 546,yPos: 457,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 571,yPos: 457,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 598,yPos: 457,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 623,yPos: 454,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 644,yPos: 451,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 665,yPos: 449,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 682,yPos: 447,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 699,yPos: 444,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 714,yPos: 442,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 729,yPos: 440,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 740,yPos: 437,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 749,yPos: 435,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 754,yPos: 434,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 755,yPos: 434,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 756,yPos: 433,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:keyboard,KeyPressed:p,AsciiValue:112,KeyID:False,ScanCode:33,Obj:d,Action:o,MessageName:key down}
+
+{type:keyboard,KeyPressed:p,AsciiValue:112,KeyID:False,ScanCode:33,Obj:u,Action:p,MessageName:key up}
+
+{type:keyboard,KeyPressed:k,AsciiValue:107,KeyID:False,ScanCode:45,Obj:d,Action:o,MessageName:key down}
+
+{type:mouse,xPos: 752,yPos: 434,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 746,yPos: 435,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 738,yPos: 435,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 730,yPos: 437,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 726,yPos: 439,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 725,yPos: 439,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:keyboard,KeyPressed:k,AsciiValue:107,KeyID:False,ScanCode:45,Obj:u,Action:p,MessageName:key up}
+
+{type:keyboard,KeyPressed:i,AsciiValue:105,KeyID:False,ScanCode:31,Obj:d,Action:o,MessageName:key down}
+{type:mouse,xPos: 723,yPos: 439,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:keyboard,KeyPressed:i,AsciiValue:105,KeyID:False,ScanCode:31,Obj:u,Action:p,MessageName:key up}
+
+{type:keyboard,KeyPressed:l,AsciiValue:108,KeyID:False,ScanCode:46,Obj:d,Action:o,MessageName:key down}
+
+{type:keyboard,KeyPressed:l,AsciiValue:108,KeyID:False,ScanCode:46,Obj:u,Action:p,MessageName:key up}
+{type:keyboard,KeyPressed:l,AsciiValue:108,KeyID:False,ScanCode:46,Obj:d,Action:o,MessageName:key down}
+
+{type:keyboard,KeyPressed:l,AsciiValue:108,KeyID:False,ScanCode:46,Obj:u,Action:p,MessageName:key up}
+
+{type:keyboard,KeyPressed:space,AsciiValue:32,KeyID:False,ScanCode:65,Obj:d,Action:o,MessageName:key down}
+{type:mouse,xPos: 720,yPos: 442,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 718,yPos: 442,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 716,yPos: 443,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:keyboard,KeyPressed:space,AsciiValue:32,KeyID:False,ScanCode:65,Obj:u,Action:p,MessageName:key up}
+
+{type:keyboard,KeyPressed:n,AsciiValue:110,KeyID:False,ScanCode:57,Obj:d,Action:o,MessageName:key down}
+{type:mouse,xPos: 713,yPos: 443,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 709,yPos: 445,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 703,yPos: 445,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 690,yPos: 449,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 677,yPos: 454,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:mouse,xPos: 667,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:mouse,xPos: 662,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+{type:keyboard,KeyPressed:o,AsciiValue:111,KeyID:False,ScanCode:32,Obj:d,Action:o,MessageName:key down}
+{type:mouse,xPos: 660,yPos: 459,Obj:0,Action:move,MessageName:mouse 0 move}
+
+{type:keyboard,KeyPressed:n,AsciiValue:110,KeyID:False,ScanCode:57,Obj:u,Action:p,MessageName:key up}
+{type:keyboard,KeyPressed:o,AsciiValue:111,KeyID:False,ScanCode:32,Obj:u,Action:p,MessageName:key up}
+{type:keyboard,KeyPressed:d,AsciiValue:100,KeyID:False,ScanCode:40,Obj:d,Action:o,MessageName:key down}
+
+{type:keyboard,KeyPressed:e,AsciiValue:101,KeyID:False,ScanCode:26,Obj:d,Action:o,MessageName:key down}
+
+{type:keyboard,KeyPressed:Return,AsciiValue:0,KeyID:False,ScanCode:36,Obj:d,Action:o,MessageName:key down}
+{type:keyboard,KeyPressed:d,AsciiValue:100,KeyID:False,ScanCode:40,Obj:u,Action:p,MessageName:key up}
+{type:keyboard,KeyPressed:e,AsciiValue:101,KeyID:False,ScanCode:26,Obj:u,Action:p,MessageName:key up}
+

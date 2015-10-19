@@ -13,10 +13,10 @@
   // });
 // });
 
-var proxy = require('../interface/hardresmgrProxyRemote').getProxy('192.168.1.100');
-
+var proxy = require('../interface/hardresmgrProxyRemote').getProxy('192.168.160.66');
+//var proxy = require('../interface/hardresmgrProxy').getProxy();
 proxy.getChannel({
-    type: 'mouse',
+    type: 'mouseKey'
   }, 'abcd', function(err, channel) {
   if(err) return console.log(err);
   channel.on('data', function(chuck) {
