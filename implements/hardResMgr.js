@@ -7,6 +7,7 @@ var fs = require('fs'),
   json4line = utils.Json4line(),
   channel = require('./channel');
 var configPath = __dirname + '/config.json';
+var resourceData=require('./resourceData');
 
 function ResourceManager(ret_) {
   var self = this;
@@ -254,110 +255,41 @@ ResourceManager.prototype._getResouceListByCate = function(args_, callback_) {
 }
 //output
 ResourceManager.prototype._getOutputInfo=function(callback_) {
-  var self=this;
-  cp.exec(self._cpiCmd, function(err, stdout, stderr) {
-    if (err) {
-      console.log('output err---' + err);
-      callback_(err);
-    } else {
-      self._getInfo(stdout,self._resource.detail.output.detail,function(){
-        callback_(null);
-      });
-    }
-  });
-}
-
-ResourceManager.prototype._isItemEnable=function(cmd_,key_,callback_) { //SHOW 
-  cp.exec(cmd_ + self._cmdExtended + key_, function(err, stdout, stderr) {
-    if (err) {
-      console.log('cmd err---' +key+'  '+ err);
-      callback_(true, err);
-    } else {
-      callback_(false, stdout);
-    }
+   var self=this;
+  resourceData.getOutputInfo(self._resource.detail['output']['detail'],function(err){
+    if(err)return callback_(err);
+    callback_(null);
   });
 }
 
 //input
 ResourceManager.prototype._getInputInfo=function(callback_) {
   var self=this;
-  cp.exec(self._inputDeviceCmd, function(err, stdout, stderr) {
-    if (err) {
-      console.log('input err---' + err);
-      callback_(err);
-    } else {
-      self._getInfo(stdout,self._resource.detail.input.detail,function(){
-        callback_(null);
-      });
-    }
+  resourceData.getInputInfo(self._resource.detail['input']['detail'],function(err){
+    if(err)return callback_(err);
+    callback_(null);
   });
 }
 
 //disk
 ResourceManager.prototype._getDiskInfo=function(callback_) {
   var self=this;
-  cp.exec('df -P | awk \'NR > 1\'', function(err, stdout, stderr) {
-    if (err) {
-      console.log('disk err---' + err);
-      return callback_(err);
-    }
-    var aDrives=[];
-    var aLines = stdout.split('\n');
-    for (var i = 0; i < aLines.length; i++) {
-      var sLine = aLines[i];
-      if (sLine != '') {
-        sLine = sLine.replace(/ +(?= )/g, '');
-        var aTokens = sLine.split(' ');
-        aDrives[aDrives.length] = {
-          filesystem: aTokens[0],
-          totalSize: aTokens[1],
-          used: aTokens[2],
-          available: aTokens[3],
-          capacity: aTokens[4],
-          mounted: aTokens[5]
-        };
-      }
-    }
-    self._resource.detail['disk'].detail=aDrives;
+  resourceData.getDiskInfo(function(err,rstArr){
+    if(err)return callback_(err);
+    self._resource.detail['disk'].detail=rstArr;
     callback_(null);
   });
 }
 ResourceManager.prototype._getPrinterInfo = function(callback_) {
   var self = this;
-  cp.exec('lpstat  -p', function(err, stdout, stderr) {
-    if (err) {
-      console.log('disk err---' + err);
+  resourceData.getPrinterInfo(function(err,rstArr){
+    if(err){
+      delete self._resource.detail['printer'];
       return callback_(err);
     }
-    var aDrives=[];
-    var aLines = stdout.split('\n');
-    for (var i = 0; i < aLines.length; i++) {
-      var sLine = aLines[i];
-      if (sLine != '') {
-        sLine = sLine.replace(/ +(?= )/g, '');
-        var aTokens = sLine.split(' ');
-        var date = Array.prototype.slice.call(aTokens, 6, aTokens.length).toString();
-        aDrives[aDrives.length] = {
-          name: aTokens[1],
-          state: aTokens[3].substring(0, aTokens[3].length - 1),
-          date: date
-        };
-      }
-    }
-    self._resource.detail['printer'].detail=aDrives;
+    self._resource.detail['printer'].detail=rstArr;
     callback_(null);
   });
-}
-
-ResourceManager.prototype._getInfo = function(str_, infoObj_, callback_) {
-  str_ = str_.toLowerCase();
-  for (var detailKey in infoObj_) {
-    var key = infoObj_[detailKey].type.toLowerCase();
-    if (str_.indexOf(key) < 0) {
-      delete infoObj_[detailKey];
-    }
-  }
-  callback_();
 }
 
 var stub = null;

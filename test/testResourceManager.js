@@ -1,9 +1,10 @@
+var util = require('util');
 var resourceMgr = require('api').resourceMgr();
 var args = {};
 var type = [];
 type.push('hardResource');
-type.push('input');
-type.push('mouse');
+//type.push('output');
+//type.push('vga');
 args['type'] = type;
 args['desc'] = {};
 args['desc']['IP'] = '127.0.0.1';
@@ -15,6 +16,7 @@ resMgr.on('hardResource', function(rst_) {
 });
 resMgr.getResourceList(function(err, ret_) {
   console.log("-------------->>>>>>>> " + JSON.stringify(ret_));
+  console.log(util.inspect(ret_, {colors:true, depth:10}));
   var agrsObj = {};
   agrsObj['desc'] = {};
   agrsObj['type'] = ['hardResource'];
