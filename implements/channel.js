@@ -1,5 +1,6 @@
 // TODO: used to set up a channel
 var net = require('net'),
+    fs=require('fs'),
     os = require('os'),
     uuid = require('node-uuid'),
     crypto = require('crypto'),
@@ -9,6 +10,7 @@ var net = require('net'),
     localServPath = os.tmpdir() + '/' + localServName + '.sock',
     localServ = null,
     dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
+    monitor=require('./monitor.js');
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
@@ -17,9 +19,14 @@ var net = require('net'),
       // 'camera': []
     /* ] */;
 
-function channel2Mouse(callback) {
+function channel2MouseKey(callback) {
   // TODO: new a process and pipe to this process
-  return callback(null);
+  console.log('channel2MouseKey')
+  //monitor.monitorPipe(function(err,channelTmp){
+    //var file=fs.createWriteStream('/home/yff/dde/service/hardresmgr/implements/b.out');
+    //channelTmp.pipe(file);
+  //});
+  //return callback(null);
 }
 
 function channel2Keyboard(callback) {
@@ -35,8 +42,8 @@ function channel2Camera(callback) {
 function channelEstablish(srcObj, callback) {
   var cb = callback || noop;
   switch(srcObj.type) {
-    case 'mouse':
-      return channel2Mouse(cb);
+    case 'mouseKey':
+      return channel2MouseKey(cb);
     case 'keyboard':
       return channel2Keyboard(cb);
     case 'camera':
@@ -48,16 +55,16 @@ function channelEstablish(srcObj, callback) {
 
 function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
-  // channelEstablish(srcObj, function(err, devChannel) {
-    // devChannel.pipe(channel);
-  // });
-  
+  channelEstablish(srcObj, function(err, devChannel) {
+     devChannel.pipe(channel);
+  });
+ /* 
   // Just for test
   var fs = require('fs');
-  var rs1 = fs.createReadStream('/home/lgy/ttt');
+  var rs1 = fs.createReadStream('/home/yff/ttt');
   peddingChannel[channel.id] = [rs1, channel];
   // test end
-  
+  */
   return cb(null);
 }
 
@@ -132,4 +139,3 @@ exports.getChannel = function(srcObj, auth, callback) {
     cb(null, localServPath);
   }
 }
-

@@ -24,14 +24,14 @@ resMgr.getResourceList(function(err, ret_) {
   var typeItem = {};
   var type = [];
   type.push('input');
-  type.push('camera');
+  type.push('key');
   typeItem['type'] = type;
   typeItem['option'] = 0;
   detail.push(typeItem);
   typeItem = {};
   type = [];
-  type.push('output');
-  type.push('audio');
+  type.push('input');
+  type.push('mouse');
   typeItem['type'] = type;
   typeItem['option'] = 0;
   detail.push(typeItem);

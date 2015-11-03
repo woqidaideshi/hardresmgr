@@ -110,6 +110,11 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
           if(err) return callback(err);
           callback(null, dChannel);
+          // if(!err){
+          //   dChannel.on('data',function(data){
+          //     console.log(data.toString())
+          //   });
+          // }
           dChannel.write(dChannel.id);
         });
       };

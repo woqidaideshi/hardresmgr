@@ -3,7 +3,6 @@
 // TODO: please replace types with peramters' name you wanted of any functions
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
-var channel = require('../implements/channel');
 var initObj = {
   "address": "nodejs.webde.hardresmgr",
   "path": "/nodejs/webde/hardresmgr",
@@ -28,36 +27,31 @@ var initObj = {
       "in": [
         "Object"
       ]
-    },
-    {
-      "name": "getChannel",
-      "in": [
-        "Object",
-        "String"
-      ]
     }
   ],
   "serviceObj": {
-    getResourceList: function(Object, callback) {
+    getResourceList: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
       hardResMgr.getResourceList(Object,function(err,result){
-        if (err) return callback({err: err});
-        callback({ret: result});
+        if (err) return callback({
+          err: err
+        });
+        callback({
+          ret: result
+        });
       });
     },
-    applyResource: function(Object, callback) {
-      applyQueue.push([Object,callback]);
-      if(applyQueue.length===1)
-        stub._handleApplyQueue();
+    applyResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+      hardResMgr.applyResource(Object,function(err,result){
+        if(err)return callback({err: err});
+        callback({ret:result});
+        stub._notifyStateChg(result,'1');
+      });
     },
-    releaseResource: function(Object, callback) {
-      releaseQueue.push([Object,callback]);
-      if(releaseQueue.length===1)
-        stub._handleReleaseQueue();
-    },
-    getChannel: function(srcObj, auth, callback) {
-      channel.getChannel(srcObj, auth, function(err,data) {
-        if(err) return callback({err: err});
-        callback({ret: arguments[1]});
+    releaseResource: function(Object, callback) {/* TODO: Implement your service. Make sure that call the callback at the end of this function whose parameter is the return of this service.*/
+      hardResMgr.releaseResource(Object,function(err,result){
+        if(err)return callback({err: err});
+        callback({ret:result});
+        stub._notifyStateChg(result,'0');
       });
     }
   }
@@ -85,55 +79,11 @@ Stub.prototype._notifyStateChg = function(items_, state_) {
     console.log('state changed notify fail');
   }
 };
-Stub.prototype._handleApplyQueue = function() {
-  flowctl.series([{
-    fn: function(pera_, cb_) {
-      var ctn = applyQueue[0];
-      hardResMgr.applyResource(ctn[0], function(err, result) {
-        if (err) ctn[1]({err: err});
-        else {
-          stub._notifyStateChg(result, '1');
-          ctn[1]({ret: result});
-        }
-        cb_();
-      });
-    },
-    pera: {}
-  }], function(err_, rets_) {
-    applyQueue.shift();
-    if (applyQueue.length != 0)
-      stub._handleApplyQueue();
-  });
-};
-Stub.prototype._handleReleaseQueue = function() {
-  flowctl.series([{
-    fn: function(pera_, cb_) {
-      var ctn = releaseQueue[0];
-      hardResMgr.releaseResource(ctn[0], function(err, result) {
-        if (err) ctn[1]({err: err});
-        else {
-          ctn[1]({ret: result});
-          stub._notifyStateChg(result, '0');
-        }
-        cb_();
-      });
-    },
-    pera: {}
-  }], function(err_, rets_) {
-    releaseQueue.shift();
-    if (releaseQueue.length != 0)
-      stub._handleReleaseQueue();
-  });
-};
 
-var utils = require('utils'),
-  flowctl = utils.Flowctl();
 var stub = null,
     cd = null,
-    hardResMgr = null;
-var applyQueue = [],
-    releaseQueue = [];
-var proxyPath = __dirname + '/hardresmgrProxy';
+    hardResMgr=null;
+var proxyPath = __dirname+'/hardresmgrProxy';
 exports.getStub = function(hardResMgr_) {
   if(stub == null) {
  //   if(typeof proxyAddr_ === 'undefined')
@@ -147,7 +97,7 @@ exports.getStub = function(hardResMgr_) {
       }
     });
     stub = new Stub();
-    hardResMgr = hardResMgr_;
+    hardResMgr=hardResMgr_;
   }
   return stub;
 }
