@@ -59,9 +59,6 @@ function channelEstablish(srcObj, callback) {
 function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
   channelEstablish(srcObj, function(err, devChannel) {
-<<<<<<< HEAD
-     devChannel.pipe(channel);
-=======
     console.log('establish----');
      //devChannel.pipe(channel);
      // if(!err){
@@ -70,7 +67,6 @@ function bindChannel(srcObj, channel, callback) {
      //  });
      // }
      peddingChannel[channel.id] = [devChannel, channel];
->>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
   });
  /* 
   // Just for test
