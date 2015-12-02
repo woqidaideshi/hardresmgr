@@ -6,7 +6,7 @@ Any key pressed prints out the keys values, program terminates when spacebar is 
 
 #Libraries we need
 import pyxhook
-import time
+import time,sys
 
 def callbackDefault(event):
     pass
@@ -53,7 +53,9 @@ def run(callback):
     running = True
     #i=0;
     while running:
-        pass
+        sys.stdout.flush()
+        time.sleep(0.1)
+        #pass
         '''i+=1
         time.sleep(0.1)
         if (i==10):

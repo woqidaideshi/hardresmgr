@@ -94,6 +94,7 @@ if __name__ == '__main__':
     tLen=sys.argv[4]
     m.goto_xy(int(pos_x),int(pos_y))
     if ev and tLen:
+<<<<<<< HEAD
         if ev=="sleep":
             EVDIC[ev](float(tLen))
         elif ev != "sleep":
@@ -102,5 +103,12 @@ if __name__ == '__main__':
         else:
             pass
     #tm.sleep(0.1)   
+=======
+        if ev != "sleep":
+            EVDIC[ev](int(tLen))
+        else:
+            EVDIC[ev](float(tLen))
+    tm.sleep(0.1)   
+>>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
             
             

@@ -22,10 +22,13 @@ var net = require('net'),
 function channel2MouseKey(callback) {
   // TODO: new a process and pipe to this process
   console.log('channel2MouseKey')
-  //monitor.monitorPipe(function(err,channelTmp){
-    //var file=fs.createWriteStream('/home/yff/dde/service/hardresmgr/implements/b.out');
-    //channelTmp.pipe(file);
-  //});
+  monitor.monitorPipe(callback
+    // function(err,channelTmp){
+    //   channelTmp.on('data',function(data){
+    //     console.log(data.toString())
+    //   });
+  //}
+  );
   //return callback(null);
 }
 
@@ -56,7 +59,18 @@ function channelEstablish(srcObj, callback) {
 function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
   channelEstablish(srcObj, function(err, devChannel) {
+<<<<<<< HEAD
      devChannel.pipe(channel);
+=======
+    console.log('establish----');
+     //devChannel.pipe(channel);
+     // if(!err){
+     //  devChannel.on('data',function(data){
+     //    console.log(data.toString())
+     //  });
+     // }
+     peddingChannel[channel.id] = [devChannel, channel];
+>>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
   });
  /* 
   // Just for test
@@ -72,7 +86,7 @@ function activePeddingChannel(channelID) {
   if(peddingChannel[channelID]) {
     channel = peddingChannel[channelID];
     channel[0].on('data', function(chuck) { 
-      console.log(chuck + '');
+      //console.log(chuck + '');
       channel[1].write(chuck);
     }).on('error', function(err) {
       console.log(err);
@@ -126,6 +140,7 @@ exports.getChannel = function(srcObj, auth, callback) {
     dt.getChannel({addr: srcObj.srcAddr}, function(err, channel) {
       if(err) return callback(err);
       bindChannel(srcObj, channel, function(err) {
+        console.log('here  am i');
         if(err) return callback(err);
         callback(null, channel.id);
         channel.once('data', function(chuck) {

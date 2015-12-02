@@ -1,5 +1,8 @@
 import otherTest
+<<<<<<< HEAD
 import simulate
+=======
+>>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
 if __name__=="__main__":
 	def callback(event):
     		print event
@@ -11,6 +14,7 @@ if __name__=="__main__":
 	print test.__str__().ljust(50)+"000"
 	otherTest.run(callback);
 	testStr='hi:'+str(1)
+<<<<<<< HEAD
 	print testStr
 	map={};
 	map['hi']='hi'
@@ -20,3 +24,6 @@ if __name__=="__main__":
 	dat="{type:mouse,xPos: 1430,yPos: 411,Obj:0,Action:move,MessageName:mouse 0 move}"
 	print sub(dat,1,len(data)-1)
 
+=======
+	print testStr
+>>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a

@@ -108,6 +108,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         if(ret.err) return callback(ret.err);
         var sessionID = ret.ret;
         dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
+          console.log('hi=====hi');
           if(err) return callback(err);
           callback(null, dChannel);
           // if(!err){

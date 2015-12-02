@@ -332,7 +332,7 @@ class pyxhookkeyevent:
         #rst={"KeyPressed":str(self.Key) ,"AsciiValue" :str(self.Ascii) ,"KeyID": str(self.KeyID), "ScanCode": str(self.ScanCode) ,"Action":self.Action,"MessageName": str(self.MessageName)}
         #rst={'KeyPressed':str(self.Key) ,'AsciiValue':str(self.Ascii) ,'KeyID': str(self.KeyID), 'ScanCode': str(self.ScanCode) ,'Action':self.Action,'MessageName': str(self.MessageName)}
         #rst={'KeyPressed':self.Key ,'AsciiValue':self.Ascii ,'KeyID': self.KeyID, 'ScanCode': self.ScanCode ,'Action':self.Action,'MessageName':self.MessageName}
-        rst='{type:keyboard,KeyPressed:'+str(self.Key) +',AsciiValue:'+str(self.Ascii) +',KeyID:'+ str(self.KeyID)+',ScanCode:'+ str(self.ScanCode) +',Action:'+str(self.Action)+',MessageName:'+self.MessageName+'}'
+        rst='{type:keyboard,KeyPressed:'+str(self.Key) +',AsciiValue:'+str(self.Ascii) +',KeyID:'+ str(self.KeyID)+',ScanCode:'+ str(self.ScanCode) +',Action:'+str(self.Action)+'}'#+',MessageName:'+self.MessageName+'}'
         return rst
         # [{"Window Handle": str(self.Window),"Window Name":str(self.WindowName) ,"Window Process Name":str(self.WindowProcName) ,"Key Pressed": str(self.Key) ,"Ascii Value":str(self.Ascii),"KeyID":str(self.KeyID),"ScanCode":str(self.ScanCode) ,"MessageName": str(self.MessageName) }]
         #rst= '{"Window Handle": '+str(self.Window)+',"Window Name":'+str(self.WindowName) +',"Window Process Name":'+str(self.WindowProcName) ',"Key Pressed": '+str(self.Key) +',"Ascii Value":'+str(self.Ascii)+',"KeyID":'+str(self.KeyID)+',"ScanCode":'+str(self.ScanCode) +',"MessageName": '+str(self.MessageName) +'}'
@@ -361,7 +361,7 @@ class pyxhookmouseevent:
     def __str__(self):
         #rst={"Position":  self.Position ,"Action":self.Action,"MessageName" : str(self.MessageName)}
         #rst={'xPos':  self.Position[0] ,'yPos':  self.Position[1] ,'Action':self.Action,'MessageName': self.MessageName}
-        rst='{type:mouse,xPos: '+str( self.Position[0])+',yPos: '+str( self.Position[1] )+',Action:'+str(self.Action)+',MessageName:'+self.MessageName+'}'
+        rst='{type:mouse,xPos:'+str( self.Position[0])+',yPos:'+str( self.Position[1] )+',Obj:'+str(self.Action[0])+',Action:'+str(self.Action[1])+'}'#+',MessageName:'+self.MessageName+'}'
         return rst
         # [{"Window Handle": str(self.Window),"Window Name":str(self.WindowName) ,"Window Process Name":str(self.WindowProcName) ,"Position": str(self.Position) ,"MessageName": str(self.MessageName) }]
         #rst= '{"Window Handle": '+str(self.Window)+',"Window Name":'+str(self.WindowName) +',"Window Process Name":'+str(self.WindowProcName) ',"Position": '+str(self.Position) +',"MessageName": '+str(self.MessageName) +'}'

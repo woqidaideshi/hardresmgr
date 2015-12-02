@@ -286,15 +286,16 @@ function getDiskInfo(callback) {
     for (var i = 0; i < aLines.length; i++) {
       var sLine = aLines[i];
       if (sLine != '') {
-        var aTokens = sLine.split(' ');
-        aDrives[aDrives.length] = {
-          filesystem: aTokens[0],
-          totalSize: aTokens[1],
-          used: aTokens[2],
-          available: aTokens[3],
-          capacity: aTokens[4],
-          mounted: aTokens[5]
-        };
+        //var aTokens = sLine.split(' ');
+        aDrives[aDrives.length] = sLine;
+        // {
+        //   filesystem: aTokens[0],
+        //   totalSize: aTokens[1],
+        //   used: aTokens[2],
+        //   available: aTokens[3],
+        //   capacity: aTokens[4],
+        //   mounted: aTokens[5]
+        // };
       }
     }
     callback(null, aDrives);

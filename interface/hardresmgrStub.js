@@ -56,8 +56,8 @@ var initObj = {
         stub._handleReleaseQueue();
     },
     getChannel: function(srcObj, auth, callback) {
-      console.log('get channel=====')
       channel.getChannel(srcObj, auth, function(err,data) {
+        console.log('----getChannel');
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
       });
@@ -141,7 +141,7 @@ exports.getStub = function(hardResMgr_) {
  //   if(typeof proxyAddr_ === 'undefined')
  //     throw 'The path of proxy\'s module file we need!';
     // TODO: replace $cdProxy to the path of commdaemonProxy
-    cd = require('../../commdaemon/interface/commdaemonProxy.js').getProxy();
+    cd = require('../../commdaemon/interface/commdaemonProxy').getProxy();
     cd.register(initObj.name, proxyPath, function(ret) {
       if(ret.err) {
         return console.log(ret.err
