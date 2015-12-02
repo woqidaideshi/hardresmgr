@@ -52,7 +52,7 @@ function getOutputInfo(container, callback) {
         'xrandr',
         function(err, stdout, stderr) {
           if (err) console.log('xrandr error'+err);
-          else container['vga']['detail'][0]['desc']=stdout;
+          else container['vga']['detail'][0]['desc']=stdout.replace(/\s+/g, " ").split(/\s/g);
         }
       );
     }
