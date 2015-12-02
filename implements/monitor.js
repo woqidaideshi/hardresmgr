@@ -10,7 +10,7 @@ var Writable = stream.Writable;
 
 
 function monitorFunc(callback) {
-  ///home/yff/dde/service/hardresmgr/implements/pyxhook
+  ///home/yff/dde/servihce/hardresmgr/implements/pyxhook
   //free = spawn('python',['./pyxhook/monitor.py']); 
   free = spawn('python', ['/home/yff/dde/service/hardresmgr/implements/pyxhook/monitor.py']);
   // 捕获标准输出并将其打印到控制台 
@@ -70,7 +70,6 @@ function monitor(callback) {
       console.log('err:' + data);
       callback(err, data);
     } else {
-      
       var rst = ('' + data + '').replace(/(^\s*)|(\s*$)/g, "");
       var str = rst.substr(rst.indexOf('{') + 1, rst.indexOf('}') - 1);
       if (str.length > 8) {

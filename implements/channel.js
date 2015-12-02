@@ -61,11 +61,12 @@ function bindChannel(srcObj, channel, callback) {
   channelEstablish(srcObj, function(err, devChannel) {
     console.log('establish----');
      //devChannel.pipe(channel);
-     if(!err){
-      devChannel.on('data',function(data){
-        console.log(data.toString())
-      });
-     }
+     // if(!err){
+     //  devChannel.on('data',function(data){
+     //    console.log(data.toString())
+     //  });
+     // }
+     peddingChannel[channel.id] = [devChannel, channel];
   });
  /* 
   // Just for test
@@ -81,7 +82,7 @@ function activePeddingChannel(channelID) {
   if(peddingChannel[channelID]) {
     channel = peddingChannel[channelID];
     channel[0].on('data', function(chuck) { 
-      console.log(chuck + '');
+      //console.log(chuck + '');
       channel[1].write(chuck);
     }).on('error', function(err) {
       console.log(err);
