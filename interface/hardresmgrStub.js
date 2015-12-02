@@ -41,6 +41,7 @@ var initObj = {
     getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({err: err});
+        console.log(JSON.stringify(result))
         callback({ret: result});
       });
     },
@@ -55,6 +56,7 @@ var initObj = {
         stub._handleReleaseQueue();
     },
     getChannel: function(srcObj, auth, callback) {
+      console.log('get channel=====')
       channel.getChannel(srcObj, auth, function(err,data) {
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
