@@ -60,10 +60,10 @@ def elapse():
     return i
 
 def simulateEvent(event):
-    xPos=event["Position"][0]
-    yPos=event["Position"][1]
-    ActionID=event["Action"][0]
-    ActionName=event["Action"][1]
+    xPos=event["xPos"]
+    yPos=event["yPos"]
+    ActionID=event["Obj"]
+    ActionName=event["Action"]
     m=mouse()
     EVDIC={ "press":m.mouse_press, 
             "release":m.mouse_release, 
@@ -74,8 +74,10 @@ def simulateEvent(event):
     if ActionName and ActionID:
         if ActionName != "sleep":
             EVDIC[ActionName](int(ActionID))
-        else:
+        elif ActionName == "sleep":
             EVDIC[ActionName](float(ActionID))
+        else:
+            pass
 
 if __name__ == '__main__':
     import sys
@@ -92,10 +94,21 @@ if __name__ == '__main__':
     tLen=sys.argv[4]
     m.goto_xy(int(pos_x),int(pos_y))
     if ev and tLen:
+<<<<<<< HEAD
+        if ev=="sleep":
+            EVDIC[ev](float(tLen))
+        elif ev != "sleep":
+            if(EVDIC[ev]):
+                EVDIC[ev](int(tLen))
+        else:
+            pass
+    #tm.sleep(0.1)   
+=======
         if ev != "sleep":
             EVDIC[ev](int(tLen))
         else:
             EVDIC[ev](float(tLen))
     tm.sleep(0.1)   
+>>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
             
             

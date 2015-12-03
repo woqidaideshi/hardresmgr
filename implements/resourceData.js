@@ -1,6 +1,6 @@
 var exec = require('child_process').exec,
-  utils = require('utils'),
-  printer = require("node-printer"),
+  utils = require('utils'), 
+  printer = require("printer"), 
 flowctl = utils.Flowctl(),
 json4line = utils.Json4line();
 
