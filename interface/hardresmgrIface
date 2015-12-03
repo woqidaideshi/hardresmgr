@@ -7,6 +7,10 @@
       "in": ["Object"]
     },
     {
+      "name": "getCateList",
+      "in": ["Object"]
+    },
+    {
       "name": "applyResource",
       "in": ["Object"]
     },

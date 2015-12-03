@@ -74,6 +74,27 @@ ResourceManager.prototype.getResourceList = function(argObj_, callback_) {
   }
 }
 
+ResourceManager.prototype.getCateList = function(argObj_, callback_) {
+  var self = this;
+  var rst=self._resource;
+  for(var i =1;i< Object.keys(argObj_).length;i++){
+    if(rst['detail'][argObj_[i]]===undefined)return callback_('no such type',undefined);
+    else {
+      rst=rst['detail'][argObj_[i]];
+    }
+  }
+  var rstSet=[];
+  for(var key in rst['detail']){
+    rstSet.push(key)
+  }
+  var rstObj={};
+  for(var key in rst){
+    rstObj[key]=rst[key];
+  }
+  rstObj['detail']=rstSet;
+  callback_(undefined,rstObj);
+}
+
 // TODO: add a channel property into rstObj for getting data
 ResourceManager.prototype.applyResource = function(argObj_, callback_) {
   var self = this;

@@ -18,6 +18,12 @@ var initObj = {
       ]
     },
     {
+      "name": "getCateList",
+      "in": [
+        "Object"
+      ]
+    },
+    {
       "name": "applyResource",
       "in": [
         "Object"
@@ -42,6 +48,12 @@ var initObj = {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({err: err});
         console.log(JSON.stringify(result))
+        callback({ret: result});
+      });
+    },
+    getCateList: function(Object, callback) {
+      hardResMgr.getCateList(Object,function(err,result){
+        if (err) return callback({err: err});
         callback({ret: result});
       });
     },
