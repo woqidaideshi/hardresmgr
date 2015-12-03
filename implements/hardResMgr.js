@@ -91,7 +91,7 @@ ResourceManager.prototype.getCateList = function(argObj_, callback_) {
   for(var key in rst){
     rstObj[key]=rst[key];
   }
-  rstObj['detail']={};
+  rstObj['detail']=rstSet;
   callback_(undefined,rstObj);
 }
 
