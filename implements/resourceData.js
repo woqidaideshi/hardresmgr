@@ -304,7 +304,7 @@ exec('df -P', function(err, stdout, stderr) {
       console.log('disk err---' + err);
       return callback(err);
     }
-    callback(null, stderr);
+    callback(null, stdout);
   });
 }
 exports.getDiskInfo = getDiskInfo;
