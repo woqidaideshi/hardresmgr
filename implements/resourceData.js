@@ -52,7 +52,7 @@ function getOutputInfo(container, callback) {
         'xrandr',
         function(err, stdout, stderr) {
           if (err) console.log('xrandr error'+err);
-          else container['vga']['detail'][0]['desc']=stdout.replace(/\s+/g, " ").split(/\s/g);
+          else container['vga']['detail'][0]['desc']=stdout;//.replace(/\s+/g, " ").split(/\s/g);
         }
       );
     }
@@ -276,28 +276,35 @@ function getInputInfo(inputContainer, callback) {
 exports.getInputInfo = getInputInfo;
 
 function getDiskInfo(callback) {
-  exec('df -P | awk \'NR > 1\'', function(err, stdout, stderr) {
+  // exec('df -P | awk \'NR > 1\'', function(err, stdout, stderr) {
+  //   if (err) {
+  //     console.log('disk err---' + err);
+  //     return callback(err);
+  //   }
+  //   var aDrives = [];
+  //   var aLines = stdout.split('\n');
+  //   for (var i = 0; i < aLines.length; i++) {
+  //     var sLine = aLines[i];
+  //     if (sLine != '') {
+  //       var aTokens = sLine.replace(/\s+/g, " ").split(/\s/g);
+  //       aDrives[aDrives.length] = {
+  //         filesystem: aTokens[0],
+  //         totalSize: aTokens[1],
+  //         used: aTokens[2],
+  //         available: aTokens[3],
+  //         capacity: aTokens[4],
+  //         mounted: aTokens[5]
+  //       };
+  //     }
+  //   }
+  //   callback(null, aDrives);
+  // });
+exec('df -P', function(err, stdout, stderr) {
     if (err) {
       console.log('disk err---' + err);
       return callback(err);
     }
-    var aDrives = [];
-    var aLines = stdout.split('\n');
-    for (var i = 0; i < aLines.length; i++) {
-      var sLine = aLines[i];
-      if (sLine != '') {
-        var aTokens = sLine.replace(/\s+/g, " ").split(/\s/g);
-        aDrives[aDrives.length] = {
-          filesystem: aTokens[0],
-          totalSize: aTokens[1],
-          used: aTokens[2],
-          available: aTokens[3],
-          capacity: aTokens[4],
-          mounted: aTokens[5]
-        };
-      }
-    }
-    callback(null, aDrives);
+    callback(null, stderr);
   });
 }
 exports.getDiskInfo = getDiskInfo;
