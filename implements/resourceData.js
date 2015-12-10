@@ -276,7 +276,7 @@ function getInputInfo(inputContainer, callback) {
 exports.getInputInfo = getInputInfo;
 
 function getDiskInfo(callback) {
-  exec('df -P | awk \'NR > 1\'', function(err, stdout, stderr) {
+  exec('df -T --block-size=1 | awk \'NR > 1\'', function(err, stdout, stderr) {
     if (err) {
       console.log('disk err---' + err);
       return callback(err);
@@ -289,11 +289,12 @@ function getDiskInfo(callback) {
         var aTokens = sLine.replace(/\s+/g, " ").split(/\s/g);
         aDrives[aDrives.length] = {
           filesystem: aTokens[0],
-          totalSize: aTokens[1],
-          used: aTokens[2],
-          available: aTokens[3],
-          capacity: aTokens[4],
-          mounted: aTokens[5]
+          type: aTokens[1],
+          totalSize: aTokens[2],
+          used: aTokens[3],
+          available: aTokens[4],
+          capacity: aTokens[5],
+          mounted: aTokens[6]
         };
       }
     }
