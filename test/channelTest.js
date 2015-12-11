@@ -12,20 +12,15 @@
     // console.log(err);
   // });
 // });
-<<<<<<< HEAD
-var simulate=require('../implements/simulate');
-=======
-
->>>>>>> e570800c6abc2b1e246fb9a48273040ba8e7f54a
-var proxy = require('../interface/hardresmgrProxyRemote').getProxy('192.168.160.66');
+var proxy = require('../interface/hardresmgrProxyRemote').getProxy('127.0.0.1');
 //var proxy = require('../interface/hardresmgrProxy').getProxy();
 proxy.getChannel({
     type: 'mouseKey'
   }, 'abcd', function(err, channel) {
   if(err) return console.log(err);
   channel.on('data', function(chuck) {
-    //console.log(chuck.toString())
-    simulate.simulateMouseKey(chuck.toString());
+    console.log(chuck.toString())
+    //simulate.simulateMouseKey(chuck.toString());
   }).on('end', function() {
     console.log('Over');
   }).on('error', function(err) {
