@@ -3,6 +3,37 @@
 // TODO: please replace types with peramters' name you wanted of any functions
 // TODO: please replace $ipcType with one of dbus, binder, websocket and socket
 
+var __cd = undefined,
+    init = false,
+    pending = [];
+require('webde-rpc').defaultSvcMgr().getService('nodejs.webde.commdaemon', function(ret) {
+  if(ret.err) return console.log(ret.err);
+  __cd = ret.ret;
+  init = true;
+  __emit();
+});
+
+function __emit() {
+  for(var key in pending) {
+    for(var i = 0; i < pending[key].length; ++i) {
+      var p = pending[key][i];
+      clearTimeout(p[1]);
+      proxy[key].apply(proxy, p[0]);
+    }
+  }
+  pending = [];
+}
+
+function __pend(fn, args, cb) {
+  if(typeof pending[fn] === 'undefined') {
+    pending[fn] = [];
+  }
+  var to = setTimeout(function() {
+    cb({err: 'Can\'t get commdaemon service'});
+  }, 5000);
+  pending[fn].push([args, to]);
+}
+
 function Proxy(ip) {
   if(typeof ip !== 'undefined') {
     this.ip = ip;
@@ -10,8 +41,6 @@ function Proxy(ip) {
     return console.log('The remote IP is required');
   }
 
-  // TODO: replace $cdProxy to the real path
-  this._cd = require('../../commdaemon/interface/commdaemonProxy.js').getProxy();
   this._token = 0;
 
 }
@@ -25,6 +54,10 @@ function Proxy(ip) {
  *    what will return from this interface
  */
 Proxy.prototype.getResourceList = function(Object, callback) {
+  if(!init) {
+    __pend('getResourceList', arguments, callback);
+    return ;
+  }
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
@@ -33,7 +66,7 @@ Proxy.prototype.getResourceList = function(Object, callback) {
       func: 'getResourceList',
       args: args
     };
-  this._cd.send(this.ip, argv, callback);
+  __cd.send(this.ip, argv, callback);
 };
 
 /**
@@ -66,6 +99,10 @@ Proxy.prototype.getCateList = function(Object, callback) {
  *    what will return from this interface
  */
 Proxy.prototype.applyResource = function(Object, callback) {
+  if(!init) {
+    __pend('applyResource', arguments, callback);
+    return ;
+  }
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
@@ -74,7 +111,7 @@ Proxy.prototype.applyResource = function(Object, callback) {
       func: 'applyResource',
       args: args
     };
-  this._cd.send(this.ip, argv, callback);
+  __cd.send(this.ip, argv, callback);
 };
 
 /**
@@ -86,6 +123,10 @@ Proxy.prototype.applyResource = function(Object, callback) {
  *    what will return from this interface
  */
 Proxy.prototype.releaseResource = function(Object, callback) {
+  if(!init) {
+    __pend('releaseResource', arguments, callback);
+    return ;
+  }
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
@@ -94,10 +135,10 @@ Proxy.prototype.releaseResource = function(Object, callback) {
       func: 'releaseResource',
       args: args
     };
-  this._cd.send(this.ip, argv, callback);
+  __cd.send(this.ip, argv, callback);
 };
 
-var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy(),
+var dt = require('../../datatransfer/interface/proxy.js').getProxy(),
     os = require('os'),
     netIface = os.networkInterfaces(),
     eth = netIface.eth0 || netIface.eth1,
@@ -122,6 +163,10 @@ var dt = require('../../datatransfer/interface/datatransferProxy.js').getProxy()
  *    err or data channel object
  */
 Proxy.prototype.getChannel = function(Object, String, callback) {
+  if(!init) {
+    __pend('getChannel', arguments, callback);
+    return ;
+  }
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1)),
       cb = function(ret) {
@@ -147,9 +192,9 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         func: 'getChannel',
         args: args
       };
-  this._cd.send(this.ip, argv, cb);
+  __cd.send(this.ip, argv, callback);
   console.log('remote proxy:', args);
-}
+};
 
 /**
  * @description
@@ -165,14 +210,19 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
  *    itself of this instance
  */
 Proxy.prototype.on = function(event, handler) {
-  this._cd.on(event, handler);
+  if(!init) {
+    __pend('on', arguments, function(){});
+    return ;
+  }
+  __cd.on(event, handler);
   var argvs = {
     'action': 0,
     'svr': 'nodejs.webde.hardresmgr',
     'func': 'on',
     'args': [event]
   };
-  this._cd.send(this.ip, argvs);
+  __cd.send(this.ip, argvs);
+  return this;
 };
 
 /**
@@ -189,14 +239,19 @@ Proxy.prototype.on = function(event, handler) {
  *    itself of this instance
  */
 Proxy.prototype.off = function(event, handler) {
-  this._cd.off(event, handler);
+  if(!init) {
+    __pend('off', arguments, function(){});
+    return ;
+  }
+  __cd.off(event, handler);
   var argvs = {
     'action': 0,
     'svr': 'nodejs.webde.hardresmgr',
     'func': 'off',
     'args': [event]
   };
-  this._cd.send(this.ip, argvs);
+  __cd.send(this.ip, argvs);
+  return this;
 };
 
 var proxy = null;

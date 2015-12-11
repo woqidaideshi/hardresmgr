@@ -147,19 +147,8 @@ var stub = null,
     hardResMgr = null;
 var applyQueue = [],
     releaseQueue = [];
-var proxyPath = __dirname + '/hardresmgrProxy';
 exports.getStub = function(hardResMgr_) {
   if(stub == null) {
- //   if(typeof proxyAddr_ === 'undefined')
- //     throw 'The path of proxy\'s module file we need!';
-    // TODO: replace $cdProxy to the path of commdaemonProxy
-    cd = require('../../commdaemon/interface/commdaemonProxy').getProxy();
-    cd.register(initObj.name, proxyPath, function(ret) {
-      if(ret.err) {
-        return console.log(ret.err
-          , 'This service cannot be accessed from other devices since failed to register on CD');
-      }
-    });
     stub = new Stub();
     hardResMgr = hardResMgr_;
   }

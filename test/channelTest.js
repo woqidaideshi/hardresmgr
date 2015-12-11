@@ -12,8 +12,12 @@
     // console.log(err);
   // });
 // });
-var proxy = require('../interface/hardresmgrProxyRemote').getProxy('127.0.0.1');
+
 //var proxy = require('../interface/hardresmgrProxy').getProxy();
+
+
+var proxy = require('../interface/proxyremote').getProxy('192.168.1.100');
+
 proxy.getChannel({
     type: 'mouseKey'
   }, 'abcd', function(err, channel) {
