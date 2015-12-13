@@ -56,6 +56,7 @@ Proxy.prototype.getResourceList = function(Object, callback) {
     callback: callback
   });
 };
+
 /**
  * @description
  *    some brief introduction of this interface

@@ -13,6 +13,7 @@ var net = require('net'),
     monitor=require('./monitor.js');
 
     dt = require('../../datatransfer/interface/proxy.js').getProxy(),
+
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [

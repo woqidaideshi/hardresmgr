@@ -78,6 +78,10 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  *    what will return from this interface
  */
 Proxy.prototype.getCateList = function(Object, callback) {
+  if(!init) {
+    __pend('applyResource', arguments, callback);
+    return ;
+  }
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
   var argv = {
@@ -86,7 +90,7 @@ Proxy.prototype.getCateList = function(Object, callback) {
       func: 'getCateList',
       args: args
     };
-  this._cd.send(this.ip, argv, callback);
+  __cd.send(this.ip, argv, callback);
 };
 
 
