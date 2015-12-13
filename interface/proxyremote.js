@@ -77,9 +77,9 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
-Proxy.prototype.getCateList = function(Object, callback) {
+ Proxy.prototype.getCateList = function(Object, callback) {
   if(!init) {
-    __pend('applyResource', arguments, callback);
+    __pend('getCateList', arguments, callback);
     return ;
   }
   var l = arguments.length,
@@ -92,7 +92,6 @@ Proxy.prototype.getCateList = function(Object, callback) {
     };
   __cd.send(this.ip, argv, callback);
 };
-
 
 /**
  * @description
