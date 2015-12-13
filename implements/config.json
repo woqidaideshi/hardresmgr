@@ -10,18 +10,21 @@
           "type":"mouse",
           "name":"mouse",
           "desc":"mouse",
+          "detail":[],
           "state":0
         },
         "keyboard": {
           "type":"keyboard",
           "name":"keyboard",
           "desc":"keyboard for input",
+          "detail":[],
           "state":0
         },
         "camera": {
           "type":"camera",
           "name":"camera",
           "desc":"camera for media input",
+          "detail":[],
           "state":0
         }
       },
@@ -31,34 +34,39 @@
       "type": "output",
       "name": "output resource",
       "detail": {
-        "VGA": {
-          "type":"VGA",
+        "vga": {
+          "type":"vga",
           "name":"VGA",
           "desc":"VGA for image output",
+          "detail":[],
           "state":0
         },
         "audio": {
           "type":"audio",
           "name":"audio",
           "desc":"audio for voice",
+          "detail":[],
           "state":0
         },
         "video": {
           "type":"video",
           "name":"video",
           "desc":"video for video output",
+          "detail":[],
           "state":0
         },
-        "Ethernet": {
-          "type":"Ethernet",
+        "ethernet": {
+          "type":"ethernet",
           "name":"Ethernet",
           "desc":"ethernet for broadband",
+          "detail":[],
           "state":0
         },
         "WiFi": {
           "type":"WiFi",
           "name":"Network for Wi-Fi",
           "desc":"wireless into network through wifi",
+          "detail":[],
           "state":0
         }
       },
@@ -68,14 +76,14 @@
       "type": "disk",
       "name": "disk info",
       "desc": "disk info of the device",
-      "detail":{},
+      "detail":[],
       "state":0
     },
     "printer":{
       "type": "printer",
       "name": "printer info",
       "desc": "printer of the device",
-      "detail":{},
+      "detail":[],
       "state":0
     }
   },

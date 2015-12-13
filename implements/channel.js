@@ -1,5 +1,6 @@
 // TODO: used to set up a channel
 var net = require('net'),
+    fs=require('fs'),
     os = require('os'),
     uuid = require('node-uuid'),
     crypto = require('crypto'),
@@ -9,6 +10,8 @@ var net = require('net'),
     localServPath = os.tmpdir() + '/' + localServName + '.sock',
     localServ = null,
     dt = require('../../datatransfer/interface/proxy.js').getProxy(),
+
+    monitor=require('./monitor.js');
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
@@ -17,9 +20,17 @@ var net = require('net'),
       // 'camera': []
     /* ] */;
 
-function channel2Mouse(callback) {
+function channel2MouseKey(callback) {
   // TODO: new a process and pipe to this process
-  return callback(null);
+  console.log('channel2MouseKey')
+  monitor.monitorPipe(callback
+    // function(err,channelTmp){
+    //   channelTmp.on('data',function(data){
+    //     console.log(data.toString())
+    //   });
+  //}
+  );
+  //return callback(null);
 }
 
 function channel2Keyboard(callback) {
@@ -35,8 +46,8 @@ function channel2Camera(callback) {
 function channelEstablish(srcObj, callback) {
   var cb = callback || noop;
   switch(srcObj.type) {
-    case 'mouse':
-      return channel2Mouse(cb);
+    case 'mouseKey':
+      return channel2MouseKey(cb);
     case 'keyboard':
       return channel2Keyboard(cb);
     case 'camera':
@@ -48,16 +59,23 @@ function channelEstablish(srcObj, callback) {
 
 function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
-  // channelEstablish(srcObj, function(err, devChannel) {
-    // devChannel.pipe(channel);
-  // });
-  
+  channelEstablish(srcObj, function(err, devChannel) {
+    console.log('establish----');
+     //devChannel.pipe(channel);
+     // if(!err){
+     //  devChannel.on('data',function(data){
+     //    console.log(data.toString())
+     //  });
+     // }
+     peddingChannel[channel.id] = [devChannel, channel];
+  });
+ /* 
   // Just for test
   var fs = require('fs');
-  var rs1 = fs.createReadStream('/home/lgy/ttt');
+  var rs1 = fs.createReadStream('/home/yff/ttt');
   peddingChannel[channel.id] = [rs1, channel];
   // test end
-  
+  */
   return cb(null);
 }
 
@@ -65,7 +83,7 @@ function activePeddingChannel(channelID) {
   if(peddingChannel[channelID]) {
     channel = peddingChannel[channelID];
     channel[0].on('data', function(chuck) { 
-      console.log(chuck + '');
+      //console.log(chuck + '');
       channel[1].write(chuck);
     }).on('error', function(err) {
       console.log(err);
@@ -119,6 +137,7 @@ exports.getChannel = function(srcObj, auth, callback) {
     dt.getChannel({addr: srcObj.srcAddr}, function(err, channel) {
       if(err) return callback(err);
       bindChannel(srcObj, channel, function(err) {
+        console.log('here  am i');
         if(err) return callback(err);
         callback(null, channel.id);
         channel.once('data', function(chuck) {
@@ -132,4 +151,3 @@ exports.getChannel = function(srcObj, auth, callback) {
     cb(null, localServPath);
   }
 }
-

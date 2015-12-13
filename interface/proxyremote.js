@@ -77,6 +77,31 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
+Proxy.prototype.getCateList = function(Object, callback) {
+  if(!init) {
+    __pend('applyResource', arguments, callback);
+    return ;
+  }
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
+  var argv = {
+      action: 0,
+      svr: 'nodejs.webde.hardresmgr',
+      func: 'getCateList',
+      args: args
+    };
+  __cd.send(this.ip, argv, callback);
+};
+
+
+/**
+ * @description
+ *    some brief introduction of this interface
+ * @param
+ *    parameter list. e.g. param1: description -> value type
+ * @return
+ *    what will return from this interface
+ */
 Proxy.prototype.applyResource = function(Object, callback) {
   if(!init) {
     __pend('applyResource', arguments, callback);
@@ -153,8 +178,14 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         if(ret.err) return callback(ret.err);
         var sessionID = ret.ret;
         dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
+          console.log('hi=====hi');
           if(err) return callback(err);
           callback(null, dChannel);
+          // if(!err){
+          //   dChannel.on('data',function(data){
+          //     console.log(data.toString())
+          //   });
+          // }
           dChannel.write(dChannel.id);
         });
       };

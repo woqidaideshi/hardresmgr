@@ -65,6 +65,25 @@ Proxy.prototype.getResourceList = function(Object, callback) {
  * @return
  *    what will return from this interface
  */
+Proxy.prototype.getCateList = function(Object, callback) {
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'getCateList',
+    in: args,
+    callback: callback
+  });
+};
+
+/**
+ * @description
+ *    some brief introduction of this interface
+ * @param
+ *    parameter list. e.g. param1: description -> value type
+ * @return
+ *    what will return from this interface
+ */
 // TODO: modify to return an authentication for setting up data channels
 Proxy.prototype.applyResource = function(Object, callback) {
   var l = arguments.length,

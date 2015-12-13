@@ -18,6 +18,12 @@ var initObj = {
       ]
     },
     {
+      "name": "getCateList",
+      "in": [
+        "Object"
+      ]
+    },
+    {
       "name": "applyResource",
       "in": [
         "Object"
@@ -41,6 +47,13 @@ var initObj = {
     getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({err: err});
+        console.log(JSON.stringify(result))
+        callback({ret: result});
+      });
+    },
+    getCateList: function(Object, callback) {
+      hardResMgr.getCateList(Object,function(err,result){
+        if (err) return callback({err: err});
         callback({ret: result});
       });
     },
@@ -55,7 +68,8 @@ var initObj = {
         stub._handleReleaseQueue();
     },
     getChannel: function(srcObj, auth, callback) {
-      channel.getChannel(srcObj, auth, function(err) {
+      channel.getChannel(srcObj, auth, function(err,data) {
+        console.log('----getChannel');
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
       });
@@ -92,8 +106,8 @@ Stub.prototype._handleApplyQueue = function() {
       hardResMgr.applyResource(ctn[0], function(err, result) {
         if (err) ctn[1]({err: err});
         else {
-          ctn[1]({ret: result});
           stub._notifyStateChg(result, '1');
+          ctn[1]({ret: result});
         }
         cb_();
       });
