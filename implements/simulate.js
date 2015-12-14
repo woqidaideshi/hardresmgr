@@ -1,4 +1,5 @@
-var exec = require('child_process').exec;
+var exec = require('child_process').exec,
+config=require('systemconfig');
 
 function simulateMouseKey(data) {
   var dataItems = data.split('\n');
@@ -20,7 +21,7 @@ function simulateMouseKey(data) {
       var ii=item.substr(item.indexOf('{')+1,item.indexOf('}')-1);
       //console.log(ii)
       exec(
-        'python /home/fyf/dde/service/hardresmgr/implements/pyxhook/simulate.py '+ii,
+        'python'+config.curDir+' /service/hardresmgr/implements/pyxhook/simulate.py '+ii,
         null);
     }
   }
