@@ -1,10 +1,10 @@
 var spawn = require('child_process').spawn,
   fs = require('fs'),
   stream=require('stream'),
-  liner = require('./spwanLiner');
+  liner = require('./spwanLiner'),
+  config=require('systemconfig');
 
 var Writable = stream.Writable;
-var curDir= process.cwd();
 
 //var spawn = require('child_process').spawnSync;
 //free = spawn('python',['./pyxhook-master/testCallback.py']); 
@@ -13,7 +13,7 @@ var curDir= process.cwd();
 function monitorFunc(callback) {
   ///home/yff/dde/servihce/hardresmgr/implements/pyxhook
   //free = spawn('python',['./pyxhook/monitor.py']); 
-  free = spawn('python', [curDir+'/service/hardresmgr/implements/pyxhook/monitor.py']);
+  free = spawn('python', [config.curDir+'/service/hardresmgr/implements/pyxhook/monitor.py']);
   // 捕获标准输出并将其打印到控制台 
   free.stdout.on('data', function(data) {
     //var rst=(''+data+'').replace(/(^\s*)|(\s*$)/g, "");
@@ -36,7 +36,7 @@ function monitorFunc(callback) {
 }
 
 function monitorPipe(callback) {
-  free = spawn('python', [curDir+'/service/hardresmgr/implements/pyxhook/monitor.py'],{ stdio: ['pipe', 'pipe', 'pipe'] });
+  free = spawn('python', [config.curDir+'/service/hardresmgr/implements/pyxhook/monitor.py'],{ stdio: ['pipe', 'pipe', 'pipe'] });
   return callback(null,free.stdout);
   // free.stdout.on('data', function(data) {
   //   //var rst=(''+data+'').replace(/(^\s*)|(\s*$)/g, "");
