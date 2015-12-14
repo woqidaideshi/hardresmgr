@@ -14,8 +14,8 @@
 // });
 var simulate=require('../implements/simulate');
 
-var proxy = require('../interface/proxyremote').getProxy('192.168.160.18');
 
+var proxy = require('../interface/proxyremote').getProxy('192.168.160.18');
 
 //var proxy = require('../interface/proxy').getProxy();
 

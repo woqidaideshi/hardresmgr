@@ -195,7 +195,7 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         func: 'getChannel',
         args: args
       };
-  __cd.send(this.ip, argv, callback);
+  __cd.send(this.ip, argv, cb);
   console.log('remote proxy:', args);
 };
 

@@ -9,9 +9,11 @@ var net = require('net'),
     localServName = shasum.update(new Date() + 'servPath').digest('hex'),
     localServPath = os.tmpdir() + '/' + localServName + '.sock',
     localServ = null,
-    dt = require('../../datatransfer/interface/proxy.js').getProxy(),
 
     monitor=require('./monitor.js');
+
+    dt = require('../../datatransfer/interface/proxy.js').getProxy(),
+
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
