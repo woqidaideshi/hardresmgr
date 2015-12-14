@@ -17,7 +17,7 @@ var simulate=require('../implements/simulate');
 
 var proxy = require('../interface/proxyremote').getProxy('192.168.160.66');
 
-//var proxy = require('../interface/hardresmgrProxy').getProxy();
+//var proxy = require('../interface/proxy').getProxy();
 
 proxy.getChannel({
     type: 'mouseKey'
