@@ -1,6 +1,8 @@
 var exec = require('child_process').exec,
 config=require('systemconfig');
 
+var simulatePath=__dirname+'/pyxhook/simulate.py'
+
 function simulateMouseKey(data) {
   var dataItems = data.split('\n');
    // exec(
@@ -20,7 +22,7 @@ function simulateMouseKey(data) {
     if (item.indexOf('{') >=0) {
       var ii=item.substr(item.indexOf('{')+1,item.indexOf('}')-1);
       exec(
-        'python '+config.curDir+'/pyxhook/simulate.py '+ii,
+        'python  '+simulatePath+'  '+ii,
         null);
     }
   }
