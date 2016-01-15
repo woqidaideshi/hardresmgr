@@ -5,6 +5,7 @@ var spawn = require('child_process').spawn,
   config=require('systemconfig');
 
 var Writable = stream.Writable;
+var monitorPath=__dirname+'/pyxhook/monitor.py';
 
 //var spawn = require('child_process').spawnSync;
 //free = spawn('python',['./pyxhook-master/testCallback.py']); 
@@ -36,7 +37,7 @@ function monitorFunc(callback) {
 }
 
 function monitorPipe(callback) {
-  free = spawn('python', [config.curDir+'/service/hardresmgr/implements/pyxhook/monitor.py'],{ stdio: ['pipe', 'pipe', 'pipe'] });
+  free = spawn('python', [monitorPath],{ stdio: ['pipe', 'pipe', 'pipe'] });
   return callback(null,free.stdout);
   // free.stdout.on('data', function(data) {
   //   //var rst=(''+data+'').replace(/(^\s*)|(\s*$)/g, "");
