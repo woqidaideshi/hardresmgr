@@ -7,8 +7,6 @@ def simulateEvent(event):
   KeyID=event["KeyID"]
   ScanCode=event["ScanCode"]
   Action =event["Action"]
-  MessageName=event["MessageName"]
-  #print MessageName
   v = virtkey.virtkey()
   if Action == "down":
     v.press_keysym(int(AsciiValue))

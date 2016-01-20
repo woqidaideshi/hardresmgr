@@ -9,7 +9,7 @@ if __name__ == "__main__":
     mapStr[tmp[0]]=tmp[1]
   if mapStr['type']=='mouse':
     mouse.simulateEvent(mapStr)
-  elif mapStr['type']=='key':
+  elif mapStr['type']=='keyboard':
     key.simulateEvent(mapStr)
   '''args=sys.argv[1].split('\n')
   for j in range(len(args)):
