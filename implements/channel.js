@@ -153,3 +153,18 @@ exports.getChannel = function(srcObj, auth, callback) {
     cb(null, localServPath);
   }
 }
+
+exports.releaseChannel = function(channelId, auth, callback) {
+  // TODO: check the authentication
+  var cb = callback || noop;
+  try{
+    curChannel=runningChannel[channelId];
+    if(curChannel!=null){
+      console.log('releaseChannel---'+channelId);
+      curChannel.destroy();
+    }
+    cb(null,channelId);
+  }catch(e){
+    cb(e,channelId);
+  }
+}

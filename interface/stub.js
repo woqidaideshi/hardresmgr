@@ -41,13 +41,19 @@ var initObj = {
         "Object",
         "String"
       ]
+    },
+    {
+      "name": "releaseChannel",
+      "in": [
+        "String",
+        "String"
+      ]
     }
   ],
   "serviceObj": {
     getResourceList: function(Object, callback) {
       hardResMgr.getResourceList(Object,function(err,result){
         if (err) return callback({err: err});
-        console.log(JSON.stringify(result))
         callback({ret: result});
       });
     },
@@ -70,6 +76,13 @@ var initObj = {
     getChannel: function(srcObj, auth, callback) {
       channel.getChannel(srcObj, auth, function(err,data) {
         console.log('----getChannel');
+        if(err) return callback({err: err});
+        callback({ret: arguments[1]});
+      });
+    },
+    releaseChannel: function(channelId, auth, callback) {
+      channel.releaseChannel(channelId, auth, function(err,data) {
+        console.log('----releaseChannel');
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
       });
