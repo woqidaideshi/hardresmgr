@@ -1,4 +1,5 @@
 var spawn = require('child_process').spawn,
+  exec = require('child_process').exec,
   fs = require('fs'),
   stream=require('stream'),
   liner = require('./spwanLiner'),
@@ -61,6 +62,42 @@ function monitorPipe(callback) {
 }
 exports.monitorPipe=monitorPipe;
 
+
+function monitorCancel(callback) {
+  exec(
+    'ps -aux | grep ' + monitorPath,
+    function(err, stdout, stderr) {
+      if(err){
+        console.log('get python monitor pid err '+err);
+        callback(err);
+      }else{
+        var aLines = stdout.split('\n');
+        for (var i = 0; i < aLines.length; i++) {
+          var sLine = aLines[i];
+          if (sLine != '') {
+            if(sLine.indexOf('Sl')>0){
+              var rstStr = sLine.replace(/\s+/g, " ").split(/\s/g);
+              var pid=parseInt(rstStr[1]);
+              exec(
+                'kill -9 ' + pid,
+                function(err, stdout, stderr) {
+                  if(err){
+                    console.log('kill python monitor pid err '+err);
+                    callback(err);
+                  }else{
+                    callback(null);
+                  }
+                }
+              );
+            }
+          }
+        }
+      }
+    }
+  );
+}
+exports.monitorCancel=monitorCancel;
+
 function monitor(callback) {
   console.log('-----');
   var write = new Writable();
@@ -99,3 +136,32 @@ exports.monitor = monitor;
 
 
 //monitorPipe(function(){});
+
+// exec(
+//     'ps -aux | grep ' + monitorPath,
+//     function(err, stdout, stderr) {
+//       if(err)console.log(err);
+//       else{
+//         var aLines = stdout.split('\n');
+//         for (var i = 0; i < aLines.length; i++) {
+//           var sLine = aLines[i];
+//           if (sLine != '') {
+//             if(sLine.indexOf('Sl')>0){
+//               var rstStr = sLine.replace(/\s+/g, " ").split(/\s/g);
+//               var pid=parseInt(rstStr[1]);
+//               exec(
+//                 'kill -9 ' + pid,
+//                 function(err, stdout, stderr) {
+//                   if(err)console.log(err);
+//                   else{
+//                   }
+//                   console.log(err+'\n'+stdout+'\n'+stderr);
+//                 }
+//               );
+//             }
+//           }
+//         }
+//       }
+//       console.log(err+'\n'+stdout+'\n'+stderr);
+//     }
+//   );

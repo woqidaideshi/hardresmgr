@@ -156,14 +156,18 @@ exports.getChannel = function(srcObj, auth, callback) {
 
 exports.releaseChannel = function(channelId, auth, callback) {
   // TODO: check the authentication
+  console.log('releaseChannel---66');
   var cb = callback || noop;
   try{
     curChannel=runningChannel[channelId];
     if(curChannel!=null){
-      console.log('releaseChannel---'+channelId);
+      console.log('releaseChannel---66'+channelId);
       curChannel.destroy();
-    }
-    cb(null,channelId);
+      monitor.monitorCancel(function(err_){
+        console.log('cancel rst  '+err_);
+        cb(err_,channelId);
+      });
+    }else return cb('can not find the channel',channelId);
   }catch(e){
     cb(e,channelId);
   }

@@ -81,10 +81,11 @@ var initObj = {
       });
     },
     releaseChannel: function(channelId, auth, callback) {
+      console.log('in stub releaseChannel 66')
       channel.releaseChannel(channelId, auth, function(err,data) {
-        console.log('----releaseChannel');
+        console.log('----releaseChannel '+err+' '+data);
         if(err) return callback({err: err});
-        callback({ret: arguments[1]});
+        callback({ret: data});
       });
     }
   }
