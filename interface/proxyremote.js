@@ -201,6 +201,31 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
 
 /**
  * @description
+ *    some brief introduction of this interface
+ * @param
+ *    parameter list. e.g. param1: description -> value type
+ * @return
+ *    what will return from this interface
+ */
+Proxy.prototype.releaseChannel = function(Object, String, callback) {
+  console.log('inininin releaseChannel of 192.168.160.66')
+  if(!init) {
+    __pend('releaseChannel', arguments, callback);
+    return ;
+  }
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
+  var argv = {
+      action: 0,
+      svr: 'nodejs.webde.hardresmgr',
+      func: 'releaseChannel',
+      args: args
+    };
+  __cd.send(this.ip, argv, callback);
+};
+
+/**
+ * @description
  *    add listener for ...
  * @param
  *    param1: event to listen -> String

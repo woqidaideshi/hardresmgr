@@ -171,6 +171,26 @@ Proxy.prototype.getChannel = function(srcObj, auth, callback) {
   console.log('local proxy:', args);
 }
 
+/**
+ * @description
+ *    some brief introduction of this interface
+ * @param
+ *    parameter list. e.g. param1: description -> value type
+ * @return
+ *    what will return from this interface
+ */
+Proxy.prototype.releaseChannel = function(Object, String, callback) {
+  console.log('in release channel of local 66')
+  var l = arguments.length,
+      args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));
+  this._ipc.invoke({
+    token: this._token++,
+    name: 'releaseChannel',
+    in: args,
+    callback: callback
+  });
+};
+
 // TODO: add an interface called connChannel(auth, sessionID) for conn self-defined process
 
 /**
