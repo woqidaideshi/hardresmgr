@@ -162,7 +162,8 @@ exports.releaseChannel = function(channelId, auth, callback) {
     curChannel=runningChannel[channelId];
     if(curChannel!=null){
       console.log('releaseChannel---66'+channelId);
-      curChannel.destroy();
+      curChannel[0].destroy();
+      curChannel[1].destroy();
       monitor.monitorCancel(function(err_){
         console.log('cancel rst  '+err_);
         cb(err_,channelId);
