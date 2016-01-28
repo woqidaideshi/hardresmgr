@@ -160,7 +160,8 @@ exports.releaseChannel = function(channelId, auth, callback) {
   var cb = callback || noop;
   try{
     curChannel=runningChannel[channelId];
-    if(curChannel!=null){
+    if(curChannel==null) return cb('can not find the channel',channelId);
+    else{
       console.log('releaseChannel---66'+channelId);
       curChannel[0].destroy();
       curChannel[1].destroy();
@@ -168,7 +169,7 @@ exports.releaseChannel = function(channelId, auth, callback) {
         console.log('cancel rst  '+err_);
         cb(err_,channelId);
       });
-    }else return cb('can not find the channel',channelId);
+    }
   }catch(e){
     cb(e,channelId);
   }
