@@ -179,7 +179,7 @@ Proxy.prototype.getChannel = function(srcObj, auth, callback) {
  * @return
  *    what will return from this interface
  */
-Proxy.prototype.releaseChannel = function(Object, String, callback) {
+Proxy.prototype.releaseChannel = function(Object, auth, callback) {
   console.log('in release channel of local 66')
   var l = arguments.length,
       args = Array.prototype.slice.call(arguments, 0, (typeof callback === 'undefined' ? l : l - 1));

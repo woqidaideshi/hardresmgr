@@ -14,6 +14,7 @@ var net = require('net'),
 
     dt = require('../../datatransfer/interface/proxy.js').getProxy(),
 
+    channelMap={};
     peddingChannel = [],
     runningChannel = []/* , */
     // channels = [
@@ -63,6 +64,7 @@ function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
   channelEstablish(srcObj, function(err, devChannel) {
     console.log('establish----');
+    channelMap[srcObj['type']]=channel.id;
      //devChannel.pipe(channel);
      // if(!err){
      //  devChannel.on('data',function(data){
@@ -154,23 +156,28 @@ exports.getChannel = function(srcObj, auth, callback) {
   }
 }
 
-exports.releaseChannel = function(channelId, auth, callback) {
+exports.releaseChannel = function(obj, auth, callback) {
   // TODO: check the authentication
   console.log('releaseChannel---66');
   var cb = callback || noop;
   try{
-    curChannel=runningChannel[channelId];
-    if(curChannel==null) return cb('can not find the channel',channelId);
+    var curChannel;
+    if(obj['channelId']!=undefined){
+      curChannel=runningChannel[obj['channelId']];
+    }else if(obj['channelKey']&&channelMap[obj['channelKey']]){
+      curChannel=runningChannel[channelMap[obj['channelKey']]];
+    }else return cb('can not find the channel',obj);
+    if(curChannel==null) return cb('can not find the channel',obj);
     else{
-      console.log('releaseChannel---66'+channelId);
+      console.log('releaseChannel---66'+obj);
       curChannel[0].destroy();
       curChannel[1].destroy();
       monitor.monitorCancel(function(err_){
         console.log('cancel rst  '+err_);
-        cb(err_,channelId);
+        cb(err_,obj);
       });
     }
   }catch(e){
-    cb(e,channelId);
+    cb(e,obj);
   }
 }

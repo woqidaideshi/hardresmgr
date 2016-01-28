@@ -45,31 +45,31 @@ var initObj = {
     {
       "name": "releaseChannel",
       "in": [
-        "String",
+        "Object",
         "String"
       ]
     }
   ],
   "serviceObj": {
-    getResourceList: function(Object, callback) {
-      hardResMgr.getResourceList(Object,function(err,result){
+    getResourceList: function(Obj, callback) {
+      hardResMgr.getResourceList(Obj,function(err,result){
         if (err) return callback({err: err});
         callback({ret: result});
       });
     },
-    getCateList: function(Object, callback) {
-      hardResMgr.getCateList(Object,function(err,result){
+    getCateList: function(Obj, callback) {
+      hardResMgr.getCateList(Obj,function(err,result){
         if (err) return callback({err: err});
         callback({ret: result});
       });
     },
-    applyResource: function(Object, callback) {
-      applyQueue.push([Object,callback]);
+    applyResource: function(Obj, callback) {
+      applyQueue.push([Obj,callback]);
       if(applyQueue.length===1)
         stub._handleApplyQueue();
     },
-    releaseResource: function(Object, callback) {
-      releaseQueue.push([Object,callback]);
+    releaseResource: function(Obj, callback) {
+      releaseQueue.push([Obj,callback]);
       if(releaseQueue.length===1)
         stub._handleReleaseQueue();
     },
@@ -80,9 +80,9 @@ var initObj = {
         callback({ret: arguments[1]});
       });
     },
-    releaseChannel: function(channelId, auth, callback) {
+    releaseChannel: function(Obj, auth, callback) {
       console.log('in stub releaseChannel 66')
-      channel.releaseChannel(channelId, auth, function(err,data) {
+      channel.releaseChannel(Obj, auth, function(err,data) {
         console.log('----releaseChannel '+err+' '+data);
         if(err) return callback({err: err});
         callback({ret: data});
