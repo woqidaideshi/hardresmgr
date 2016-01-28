@@ -75,15 +75,12 @@ var initObj = {
     },
     getChannel: function(srcObj, auth, callback) {
       channel.getChannel(srcObj, auth, function(err,data) {
-        console.log('----getChannel');
         if(err) return callback({err: err});
         callback({ret: arguments[1]});
       });
     },
     releaseChannel: function(Obj, auth, callback) {
-      console.log('in stub releaseChannel 66')
       channel.releaseChannel(Obj, auth, function(err,data) {
-        console.log('----releaseChannel '+err+' '+data);
         if(err) return callback({err: err});
         callback({ret: data});
       });

@@ -177,7 +177,6 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
         if(ret.err) return callback(ret.err);
         var sessionID = ret.ret;
         dt.getChannel({sessionID: sessionID}, function(err, dChannel) {
-          console.log('hi=====hi');
           if(err) return callback(err);
           callback(null, dChannel);
           // if(!err){
@@ -208,7 +207,6 @@ Proxy.prototype.getChannel = function(Object, String, callback) {
  *    what will return from this interface
  */
 Proxy.prototype.releaseChannel = function(Object, String, callback) {
-  console.log('inininin releaseChannel of 192.168.160.66')
   if(!init) {
     __pend('releaseChannel', arguments, callback);
     return ;

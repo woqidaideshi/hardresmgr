@@ -63,7 +63,6 @@ function channelEstablish(srcObj, callback) {
 function bindChannel(srcObj, channel, callback) {
   var cb = callback || noop;
   channelEstablish(srcObj, function(err, devChannel) {
-    console.log('establish----');
     channelMap[srcObj['type']]=channel.id;
      //devChannel.pipe(channel);
      // if(!err){
@@ -141,7 +140,6 @@ exports.getChannel = function(srcObj, auth, callback) {
     dt.getChannel({addr: srcObj.srcAddr}, function(err, channel) {
       if(err) return callback(err);
       bindChannel(srcObj, channel, function(err) {
-        console.log('here  am i');
         if(err) return callback(err);
         callback(null, channel.id);
         channel.once('data', function(chuck) {
@@ -158,7 +156,6 @@ exports.getChannel = function(srcObj, auth, callback) {
 
 exports.releaseChannel = function(obj, auth, callback) {
   // TODO: check the authentication
-  console.log('releaseChannel---66');
   var cb = callback || noop;
   try{
     var curChannel;
@@ -169,11 +166,9 @@ exports.releaseChannel = function(obj, auth, callback) {
     }else return cb('can not find the channel',obj);
     if(curChannel==null) return cb('can not find the channel',obj);
     else{
-      console.log('releaseChannel---66'+obj);
       curChannel[0].destroy();
       curChannel[1].destroy();
       monitor.monitorCancel(function(err_){
-        console.log('cancel rst  '+err_);
         cb(err_,obj);
       });
     }
